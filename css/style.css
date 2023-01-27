@@ -1,11 +1,114 @@
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Open+Sans:wght@400;600;700&display=swap");
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #0c0c0c;
-  background-color: #ffffff;
-  overflow-x: hidden;
+/*==================== GOOGLE FONTS ====================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+/*==================== VARIABLES CSS ====================*/
+:root {
+  --header-height: 3rem;
+
+  /*========== Font and typography ==========*/
+  --body-font: 'Poppins', sans-serif;
+
+  /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
+  --big-font-size: 2rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1.125rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+
+  /*========== Margenes Bottom ==========*/
+  /* .25rem = 4px, .5rem = 8px, .75rem = 12px ... */
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
+  --mb-3: 3rem;
+
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
 
+/* Font size for large devices */
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 3.2rem;
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.95rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1.075rem;
+    --smaller-font-size: 1.013rem;
+  }
+}
+
+/*==================== BASE ====================*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: var(--font-semi-bold);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*==================== REUSABLE CSS CLASSES ====================*/
+.section {
+  padding: 2rem 0 4rem;
+}
+
+.section__title {
+  z-index: var(--z-tooltip);
+  font-size: var(--h1-font-size);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/*==================== LAYOUT CSS CLASSES ====================*/
 .layout_padding {
   padding: 90px 0;
 }
@@ -30,22 +133,19 @@ body {
   padding-bottom: 90px;
 }
 
-h1,
-h2 {
-  font-family: 'Dancing Script', cursive;
-}
 
+/*==================== REUSABLE CSS CLASSES ====================*/
 .heading_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .heading_container h2 {
@@ -66,8 +166,8 @@ h2 {
 
 .heading_container.heading_center {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
 }
 
@@ -86,10 +186,10 @@ a:focus {
 .btn:focus {
   outline: none !important;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
-/*header section*/
+/*==================== HEADER SECTION ====================*/
 .hero_area {
   position: relative;
   min-height: 100vh;
@@ -98,24 +198,12 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: rgb(22, 58, 36);
+  color: #ffffff;
 }
 
-.bg-box {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.bg-box img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 
 .sub_page .hero_area {
   min-height: auto;
@@ -133,9 +221,9 @@ a:focus {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   -o-object-position: right top;
-     object-position: right top;
+  object-position: right top;
 }
 
 .header_section {
@@ -147,9 +235,6 @@ a:focus {
   padding-left: 25px;
 }
 
-.navbar-brand {
-  font-family: 'Dancing Script', cursive;
-}
 
 .navbar-brand span {
   font-weight: bold;
@@ -175,7 +260,8 @@ a:focus {
   transition: all 0.3s;
 }
 
-.custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
+.custom_nav-container .navbar-nav .nav-item:hover .nav-link,
+.custom_nav-container .navbar-nav .nav-item.active .nav-link {
   color: #ffbe33;
 }
 
@@ -197,8 +283,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user_option a {
@@ -218,18 +304,16 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .user_option .cart_link svg {
   width: 17px;
-  height: auto;
-  fill: #ffffff;
-  margin-bottom: 2px;
+  color: #ffffff;
 }
 
 .user_option .cart_link:hover svg {
@@ -276,7 +360,8 @@ a:focus {
   transition: all 0.3s;
 }
 
-.custom_nav-container .navbar-toggler span::before, .custom_nav-container .navbar-toggler span::after {
+.custom_nav-container .navbar-toggler span::before,
+.custom_nav-container .navbar-toggler span::after {
   content: "";
   position: absolute;
   left: 0;
@@ -295,40 +380,50 @@ a:focus {
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] {
   -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .custom_nav-container .navbar-toggler[aria-expanded="true"] span {
   -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
+  transform: rotate(45deg);
 }
 
-.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before, .custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::before,
+.custom_nav-container .navbar-toggler[aria-expanded="true"] span::after {
   -webkit-transform: rotate(90deg);
-          transform: rotate(90deg);
+  transform: rotate(90deg);
   top: 0;
 }
 
-/*end header section*/
-/* slider section */
+.home__img {
+  z-index: var(--z-tooltip);
+  width: 25rem;
+  position: absolute;
+  margin-top: 17rem;
+  margin-left: 8rem;
+}
+
+
+
+/*==================== SLIDER SECTION ====================*/
 .slider_section {
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   position: relative;
   padding: 45px 0 75px 0;
 }
 
 .slider_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section #customCarousel1 {
@@ -375,11 +470,11 @@ a:focus {
   position: unset;
   margin: 0;
   -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .slider_section .carousel-indicators li {
@@ -406,8 +501,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   margin-top: 45px;
   border-radius: 5px;
   padding: 20px 15px;
@@ -435,13 +530,11 @@ a:focus {
 }
 
 .offer_section .box .detail-box h5 {
-  font-family: 'Dancing Script', cursive;
   font-size: 24px;
   margin: 0;
 }
 
 .offer_section .box .detail-box h6 {
-  font-family: 'Dancing Script', cursive;
   margin: 10px 0;
 }
 
@@ -474,7 +567,7 @@ a:focus {
 
 .offer_section .box:hover .img-box img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .food_section .filters_menu {
@@ -483,10 +576,10 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   list-style-type: none;
   margin: 45px 0 20px 0;
 }
@@ -519,11 +612,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   height: 215px;
   border-radius: 0 0 0 45px;
   margin: -1px;
@@ -558,8 +651,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .food_section .box .options a {
@@ -571,11 +664,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .food_section .box .options a svg {
@@ -586,7 +679,7 @@ a:focus {
 
 .food_section .box:hover .img-box img {
   -webkit-transform: scale(1.1);
-          transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .food_section .btn-box {
@@ -594,8 +687,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
 }
 
@@ -614,15 +707,17 @@ a:focus {
   background-color: #e69c00;
 }
 
+/*==================== ABOUT SECTION ====================*/
+
 .about_section {
-  background: #222831;
-  color: #ffffff;
+  color: #222831;
+  background-color: #F9F6EE; /* That is Bone, haha NICE now lets see Pauls Allens Bone Color Website */
 }
 
 .about_section .row {
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .about_section .img-box {
@@ -631,8 +726,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .about_section .img-box img {
@@ -662,6 +757,13 @@ a:focus {
   background-color: #e69c00;
 }
 
+
+
+
+
+
+/*==================== BOOK SECTION ====================*/
+
 .book_section {
   position: relative;
 }
@@ -682,7 +784,7 @@ a:focus {
   border-radius: 5px;
   outline: none;
   -webkit-box-shadow: none;
-          box-shadow: none;
+  box-shadow: none;
 }
 
 .book_section .form_container .form-control::-webkit-input-placeholder {
@@ -747,8 +849,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   margin: 15px;
 }
 
@@ -758,11 +860,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 115px;
   position: relative;
   margin-top: 30px;
@@ -783,7 +885,7 @@ a:focus {
   height: 20px;
   background-color: #ffbe33;
   -webkit-transform: rotate(45deg) translateX(-50%);
-          transform: rotate(45deg) translateX(-50%);
+  transform: rotate(45deg) translateX(-50%);
 }
 
 .client_section .box .detail-box {
@@ -810,8 +912,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 45px;
   padding: 0 15px;
 }
@@ -876,8 +978,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .contact_section .form_container button {
@@ -914,7 +1016,6 @@ a:focus {
 .footer_section .footer-logo {
   font-weight: 600;
   margin-bottom: 20px;
-  font-family: 'Dancing Script', cursive;
 }
 
 .footer_section p {
@@ -931,8 +1032,8 @@ a:focus {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .footer_section .footer_contact .contact_link_box a {
@@ -961,8 +1062,8 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 10px;
 }
@@ -972,11 +1073,11 @@ a:focus {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   color: #222831;
   width: 30px;
   height: 30px;
@@ -1004,4 +1105,10 @@ a:focus {
 .footer_section .footer-info p a {
   color: inherit;
 }
+
 /*# sourceMappingURL=style.css.map */
+
+
+.header__title {
+  z-index: var(--z-tooltip);
+}
