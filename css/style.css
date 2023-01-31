@@ -6,7 +6,7 @@
   --header-height: 3rem;
 
   /* ========== Section Colors ========= */
-  --green-section:rgb(22, 58, 36);
+  --green-section: rgb(22, 58, 36);
   --white-section: #f5f5fa;
 
   /*========== Font and typography ==========*/
@@ -232,7 +232,7 @@ a:focus {
 
 .header_section {
   padding: 15px 0;
-  background-color: var(--green-section)!;
+  background-color: var(--green-section) !;
 }
 
 .header_section .container-fluid {
@@ -495,6 +495,7 @@ a:focus {
   height: 20px;
   background-color: #ffbe33;
 }
+
 /*==================== HEADER --> SLIDER SECTION ====================*/
 
 
@@ -585,7 +586,7 @@ a:focus {
 
 /*==================== FOOD SECTION ====================*/
 
-.food_section{
+.food_section {
   color: #f5f5fa;
   background-color: var(--green-section);
 }
@@ -857,7 +858,7 @@ a:focus {
   overflow: hidden;
 }
 
-.GoogleMap{
+.GoogleMap {
   height: 100%;
   min-height: 100%;
   width: 100%;
@@ -1138,7 +1139,8 @@ a:focus {
 /*# sourceMappingURL=style.css.map */
 
 
+/* Random CSS, i have no idea how this happened */
+
 .header__title {
   z-index: var(--z-tooltip);
 }
-

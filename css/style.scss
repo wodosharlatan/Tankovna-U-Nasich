@@ -9,7 +9,8 @@ $textCol: #1f1f1f;
 
   /*========== Colors ==========*/
   /* Change favorite color */
-  --hue-color: 255; /*Purple 255 - Green 142 - Blue 230 - Pink 340*/
+  --hue-color: 255;
+  /*Purple 255 - Green 142 - Blue 230 - Pink 340*/
 
   /* HSL color mode */
   --first-color: hsl(var(--hue-color), 69%, 61%);
@@ -60,20 +61,20 @@ $textCol: #1f1f1f;
 /* Font size for large devices */
 @media screen and (min-width: 968px) {
   :root {
-      --big-font-size: 3.2rem;
-      --h1-font-size: 2.45rem;
-      --h2-font-size: 1.7rem;
-      --h3-font-size: 1.95rem;
-      --normal-font-size: 1.2rem;
-      --small-font-size: 1.075rem;
-      --smaller-font-size: 1.013rem;
+    --big-font-size: 3.2rem;
+    --h1-font-size: 2.45rem;
+    --h2-font-size: 1.7rem;
+    --h3-font-size: 1.95rem;
+    --normal-font-size: 1.2rem;
+    --small-font-size: 1.075rem;
+    --smaller-font-size: 1.013rem;
   }
 }
 
 body {
-font-family: var(--body-font);
-background-color: #ffffff;
-overflow-x: hidden;
+  font-family: var(--body-font);
+  background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 @mixin main-font {
@@ -505,7 +506,7 @@ a:focus {
         }
       }
 
-      
+
 
       a {
         @include hero_btn($primary1, $white, 10px, 30px, 45px);
