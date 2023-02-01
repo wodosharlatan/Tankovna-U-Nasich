@@ -240,11 +240,19 @@ a:focus {
   padding-left: 25px;
 }
 
-
 .navbar-brand span {
   font-weight: bold;
   font-size: 32px;
   color: #f5f5fa;
+}
+
+.nav-container{
+  background-color: var(--green-section);
+  width: 100%;
+  position: fixed;
+  z-index: var(--z-tooltip);
+  box-shadow: 0 -1px 4px rgba(0, 0, 0, .25);
+
 }
 
 .custom_nav-container {
@@ -1144,3 +1152,19 @@ a:focus {
 .header__title {
   z-index: var(--z-tooltip);
 }
+
+.section-padding_top{
+  padding-top: 8rem;
+}
+
+.section_heading-about{
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.padding-top_2{
+  padding-top: 3rem;
+}
+
+
+
