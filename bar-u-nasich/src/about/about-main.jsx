@@ -1,5 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import AboutComponent from "./about";
+import AboutApp from "./about-app";
 
-ReactDOM.createRoot(document.getElementById("root")).render(<AboutComponent />);
+
+ReactDOM.createRoot(document.getElementById("root")).render(<AboutApp />);

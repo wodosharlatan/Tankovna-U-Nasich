@@ -16,6 +16,9 @@ export default defineConfig({
 			input: {
 				main: resolve(root, "index.html"),
         about: resolve(root, "about", "index.html"),
+        contact: resolve(root, "contact", "index.html"),
+        menu: resolve(root, "menu", "index.html"),
+        reservation: resolve(root, "reservation", "index.html"),
 			},
 		},
 	},
