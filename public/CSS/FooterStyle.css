@@ -1,4 +1,4 @@
-/*==================== GOOGLE FONTS ====================*/
+/*==================== REUSABLE CSS CLASSES ====================*/ /*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*==================== VARIABLES CSS ====================*/
 /*========== Media Query Config ==========*/
@@ -41,7 +41,6 @@ img {
   height: auto;
 }
 
-/*==================== REUSABLE CSS CLASSES ====================*/
 .section {
   padding: 2rem 0 4rem;
 }
@@ -71,4 +70,32 @@ a,
 a:focus,
 a:hover {
   text-decoration: none;
+}
+
+/*==================== Footer Styles ====================*/
+footer {
+  color: #edf0f1;
+  background-color: rgb(22, 58, 36);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px 10%;
+}
+
+.footer-link {
+  display: block;
+  color: #edf0f1;
+}
+.footer-link span {
+  transition: all 0.3s ease 0s;
+}
+.footer-link span:focus, .footer-link span:hover {
+  color: #ffbe33;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }/*# sourceMappingURL=FooterStyle.css.map */

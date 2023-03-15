@@ -1,4 +1,4 @@
-/*==================== REUSABLE CSS CLASSES ====================*/ /*==================== GOOGLE FONTS ====================*/
+/*==================== GOOGLE FONTS ====================*/
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
 /*==================== VARIABLES CSS ====================*/
 /*========== Media Query Config ==========*/
@@ -18,14 +18,11 @@
 
 html {
   scroll-behavior: smooth;
-  height: 100%;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
-  min-height: 100%;
-  grid: auto/1em 1fr 1em;
 }
 
 h1,
@@ -73,51 +70,4 @@ a,
 a:focus,
 a:hover {
   text-decoration: none;
-}
-
-/*==================================== Header Styles  ===================================*/
-header {
-  background-color: rgb(22, 58, 36);
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 30px 10%;
-}
-
-.nav-links {
-  list-style: none;
-}
-.nav-links li {
-  display: inline-block;
-  padding: 0px 20px;
-}
-.nav-links li a {
-  transition: all 0.3s ease 0s;
-  color: #edf0f1;
-}
-.nav-links li a:focus, .nav-links li a:hover {
-  color: #ffbe33;
-}
-
-.reserveButton {
-  padding: 9px 25px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  background-color: rgb(255, 190, 51);
-  color: #28282b;
-  margin-left: 1.25rem;
-}
-.reserveButton:hover {
-  background-color: rgba(255, 190, 51, 0.8);
-}
-
-.navbar-brand {
-  margin-right: auto;
-}
-.navbar-brand h1 {
-  font-weight: bold;
-  font-size: 32px;
-  color: #edf0f1;
-}/*# sourceMappingURL=NavigationStyle.css.map */
+}/*# sourceMappingURL=ReusableStyles.css.map */
