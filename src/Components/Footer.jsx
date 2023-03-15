@@ -1,4 +1,6 @@
 import React from "react";
+import "../../public/CSS/FooterStyle.css";
+
 
 function PageFooter() {
 	return (

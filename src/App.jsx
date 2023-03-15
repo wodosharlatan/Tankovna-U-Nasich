@@ -13,7 +13,6 @@ function App() {
 			<MenuComponent />
 			<ReservationComponent />
 			<PageFooter />
-
 		</div>
 	);
 }
