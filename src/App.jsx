@@ -7,15 +7,16 @@ import ReservationComponent from "./Components/reservation";
 
 function App() {
 	return (
-		<div>
+		<>
 			<Navigation />
-			<AboutComponent />
-			<MenuComponent />
-			<ReservationComponent />
+			<div className="content">
+				<AboutComponent />
+				<MenuComponent />
+				<ReservationComponent />
+			</div>
 			<PageFooter />
-		</div>
+		</>
 	);
 }
 
 export default App;
- 

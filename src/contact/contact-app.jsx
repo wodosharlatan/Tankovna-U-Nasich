@@ -5,11 +5,13 @@ import PageFooter from "../Components/Footer";
 
 function ContactApp() {
 	return (
-		<div>
+		<>
 			<Navigation />
-			<ContactComponent />
+			<div className="content">
+				<ContactComponent />
+			</div>
 			<PageFooter />
-		</div>
+		</>
 	);
 }
 

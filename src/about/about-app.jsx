@@ -5,11 +5,13 @@ import PageFooter from "../Components/Footer";
 
 function AboutApp() {
 	return (
-		<div>
+		<>
 			<Navigation />
-			<AboutComponent />
-            <PageFooter />
-		</div>
+			<div className="content">
+				<AboutComponent />
+			</div>
+			<PageFooter />
+		</>
 	);
 }
 

@@ -5,11 +5,13 @@ import PageFooter from "../Components/Footer";
 
 function MenuApp() {
 	return (
-		<div>
+		<>
 			<Navigation />
-			<MenuComponent />
+			<div className="conetent">
+				<MenuComponent />
+			</div>
 			<PageFooter />
-		</div>
+		</>
 	);
 }
 

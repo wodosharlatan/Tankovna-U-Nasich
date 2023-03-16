@@ -5,11 +5,13 @@ import PageFooter from "../Components/Footer";
 
 function ReservationApp() {
 	return (
-		<div>
+		<>
 			<Navigation />
-			<ReservationComponent />
+			<div className="content">
+				<ReservationComponent />
+			</div>
 			<PageFooter />
-		</div>
+		</>
 	);
 }
 

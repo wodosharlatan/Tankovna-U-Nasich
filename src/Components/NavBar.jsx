@@ -1,18 +1,18 @@
 import React from "react";
-import "../../public/CSS/NavigationStyle.css";
+import "../../public/CSS/NavigationStyle.scss";
 import { IoBeerOutline } from "react-icons/io5";
 
 function Navigation() {
 	return (
 		<header>
-			<a class="navbar-brand" href="/">
+			<a className="navbar-brand" href="/">
 				<h1>
-					Bar u našich <IoBeerOutline class="icon" />
+					Bar u našich <IoBeerOutline className="icon" />
 				</h1>
 			</a>
 
 			<nav>
-				<ul class="nav-links">
+				<ul className="nav-links">
 					<li>
 						<a href="/">Úvod</a>
 					</li>
@@ -28,7 +28,7 @@ function Navigation() {
 				</ul>
 			</nav>
 			<a href="/reservation/">
-				<button class="reserveButton">Rezervace</button>
+				<button className="reserveButton">Rezervace</button>
 			</a>
 		</header>
 	);
