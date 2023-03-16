@@ -6,7 +6,7 @@ function PageFooter() {
 	return (
 		<footer>
 			<div>
-				<h4>Kontaktujte Nas</h4>
+				<h1>Kontaktujte Nás</h1>
 				<div>
 					<a class="footer-link" href="">
 						<span>Kde Jsme ?</span>
@@ -15,16 +15,14 @@ function PageFooter() {
 						<span>Zavolejte nám</span>
 					</a>
 					<a class="footer-link" href="">
-						<span>Emailova Adresa</span>
+						<span>Emailová Adresa </span>
 					</a>
 				</div>
 			</div>
 
 			<div>
-				<a href="" class="footer-link">
-					<span>Bar U nasich</span>
-				</a>
-				<p>[Popis Naseho Baru]</p>
+				<h1>Bar U Našich</h1>
+				<p class="footer-desc">[Popis Naseho Baru]</p>
 				<div class="social">
 					<a href="">
 						<FaFacebook class="FooterIcon" />
@@ -39,8 +37,8 @@ function PageFooter() {
 			</div>
 
 			<div>
-				<h4>Oteviraci Doba</h4>
-				<a>
+				<h1>Otevirací Doba</h1>
+				<a class="footer-desc">
 					Neděle - Čtvrtek <br /> 15:00 - 1:00h <br />
 					Patek - Sobota <br /> 15:00- 3:00h
 				</a>
