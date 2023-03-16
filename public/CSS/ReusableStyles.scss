@@ -75,6 +75,21 @@ body {
 	font-size: $normal-font-size;
 }
 
+html,
+body,
+#root {
+	min-height: 100vh;
+}
+
+#root {
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+	flex: 1;
+}
+
 h1,
 h2,
 h3,

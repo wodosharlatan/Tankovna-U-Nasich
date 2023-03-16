@@ -7,7 +7,7 @@ function MenuApp() {
 	return (
 		<>
 			<Navigation />
-			<div className="conetent">
+			<div className="content">
 				<MenuComponent />
 			</div>
 			<PageFooter />
