@@ -1,0 +1,85 @@
+/*==================== REUSABLE CSS CLASSES ====================*/
+@import "ReusableStyles.scss";
+
+/*==================== Reservation Style ====================*/
+
+@mixin FormInputMixin {
+	width: 100%;
+	border: none;
+	height: 50px;
+	padding-left: 25px;
+	background-color: transparent;
+	border: 1px solid #ccc;
+	outline: none;
+	border-radius: 1rem;
+}
+
+.reservation-field {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	margin: 0 25rem;
+	align-items: center;
+	justify-content: center;
+
+	.map_container {
+		width: 100%;
+		height: 400px;
+		border-radius: 1.5rem;
+		overflow: hidden;
+
+		.GoogleMap {
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	}
+
+	.form-container {
+		width: 100%;
+		height: 400px;
+		border-radius: 1.5rem;
+
+		form {
+			div {
+				margin-bottom: 0.75rem;
+
+				input.FormInput {
+					@include FormInputMixin;
+				}
+
+				select.FormInput {
+					@include FormInputMixin;
+				}
+			}
+
+			input[type="date"].input {
+				@include FormInputMixin;
+			}
+
+      
+		}
+	}
+}
+
+.section__title {
+	h1 {
+		text-align: left;
+		padding-left: 25rem;
+	}
+}
+
+
+.reservation_button {
+	padding: 10px 25px;
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+	background-color: rgba(255, 190, 51, 1);
+	color: $black-text-color;
+    margin-left: 1.25rem;
+	font-size: $h2-font-size;
+	&:hover {
+		background-color: rgba(255, 190, 51, 0.8);
+	}
+}
