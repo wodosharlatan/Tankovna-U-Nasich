@@ -3,13 +3,14 @@
 footer {
 	color: $white-text-color;
 	background-color: $green-section;
-	display: flex;
-	justify-content: space-evenly;
-	align-items: center;
-	text-align: center;
-	padding: 30px 10%;
-}
 
+	.container {
+		display: flex;
+		justify-content: space-evenly;
+		text-align: center;
+		padding: 30px 0;
+	}
+}
 
 .footer-link {
 	display: block;
@@ -40,8 +41,3 @@ footer {
 	color: $white-text-color;
 	font-size: $h3-font-size;
 }
-
-
-
-
-
