@@ -1,78 +1,78 @@
+import { Gallery } from "../../components/Gallery/Gallery";
 import "./about.scss";
 
-function About(){
-
+function About() {
 	const galleryImages = [
 		{
-			img: "../assets/images/0.jpg",
+			img: "../public/images/0.png",
 		},
 		{
-			img: "../assets/images/1.jpg",
+			img: "../public/images/1.png",
 		},
 		{
-			img: "../assets/images/2.jpg",
+			img: "../public/images/2.png",
 		},
 		{
-			img: "../assets/images/3.jpg",
+			img: "../public/images/3.png",
 		},
 		{
-			img: "../assets/images/4.jpg",
+			img: "../public/images/4.png",
 		},
 		{
-			img: "../assets/images/5.jpg",
+			img: "../public/images/5.png",
 		},
 		{
-			img: "../assets/images/6.jpg",
+			img: "../public/images/6.png",
 		},
 		{
-			img: "../assets/images/7.jpg",
+			img: "../public/images/7.png",
 		},
 		{
-			img: "../assets/images/8.jpg",
+			img: "../public/images/8.png",
 		},
 		{
-			img: "../assets/images/9.jpg",
+			img: "../public/images/9.png",
 		},
 		{
-			img: "../assets/images/10.jpg",
+			img: "../public/images/10.png",
 		},
 		{
-			img: "../assets/images/11.jpg",
+			img: "../public/images/11.png",
 		},
 		{
-			img: "../assets/images/12.jpg",
+			img: "../public/images/12.png",
 		},
 		{
-			img: "../assets/images/13.jpg",
+			img: "../public/images/13.png",
 		},
 		{
-			img: "../assets/images/14.jpg",
+			img: "../public/images/14.png",
 		},
 		{
-			img: "../assets/images/15.jpg",
+			img: "../public/images/15.png",
 		},
 		{
-			img: "../assets/images/16.jpg",
+			img: "../public/images/16.png",
 		},
 		{
-			img: "../assets/images/17.jpg",
+			img: "../public/images/17.png",
 		},
 		{
-			img: "../assets/images/18.jpg",
+			img: "../public/images/18.png",
 		},
-
-		
-
-
 	];
 
 	return (
 		<>
 			<div className="container">
-				<h1>About</h1>
+				
+				<div>
+					<Gallery galleryImages={galleryImages} />
+				</div>
+
 			</div>
 		</>
 	);
-};
+}
 
 export default About;
