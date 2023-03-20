@@ -2,10 +2,8 @@ import './home.scss';
 
 const Home = () => {
     return (
-        <div className="home">
+        <div className="container">
             <h1>Home</h1>
-            <img src="/Images/1.JPG" alt="" />
-
         </div>
     );
 }
