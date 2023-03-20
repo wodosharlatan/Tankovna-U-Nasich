@@ -1,9 +1,18 @@
-import './about.scss';
+import ImprovedGallery from "../../components/gallery/ImprovedGallery";
+import "./about.scss";
 
-const About = () => {
-    return (
-        <h1>About</h1>
-    );
+function About() {
+
+
+	return (
+		<>
+			<div className="container">
+
+			<ImprovedGallery/>
+				
+			</div>
+		</>
+	);
 }
 
 export default About;

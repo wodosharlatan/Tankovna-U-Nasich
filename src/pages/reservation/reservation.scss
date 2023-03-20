@@ -71,6 +71,16 @@
 			::-webkit-input-placeholder {
 				color: black;
 			}
+			:-moz-placeholder {
+				color: black;
+			}
+			::-moz-placeholder {
+				color: black;
+			}
+			:-ms-input-placeholder {
+				color: black;
+			}
+			
 
 		}
 	}
@@ -79,7 +89,6 @@
 .section__title {
 	h1 {
 		text-align: left;
-		// padding-left: 25rem;
 	}
 }
 
