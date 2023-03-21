@@ -10,7 +10,7 @@ function Header() {
 
                 <a className="navbar-brand" href="/">
                     <h1>
-                        Bar u našich <IoBeerOutline className="icon" />
+                        Tankovna u našich <IoBeerOutline className="icon" />
                     </h1>
                 </a>
 

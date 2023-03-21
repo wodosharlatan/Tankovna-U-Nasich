@@ -8,7 +8,7 @@ function About() {
 		<>
 			<div className="container">
 
-			<ImprovedGallery/>
+			<ImprovedGallery className="GalleryComponent"/>
 				
 			</div>
 		</>
