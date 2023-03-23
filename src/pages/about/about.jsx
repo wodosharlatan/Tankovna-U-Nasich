@@ -5,11 +5,13 @@ function About() {
 
 
 	return (
-		<div className="about-page container">
+		<>
+			<div className="container">
 
-			<ImprovedGallery />
-
-		</div>
+			<ImprovedGallery/>
+				
+			</div>
+		</>
 	);
 }
 
