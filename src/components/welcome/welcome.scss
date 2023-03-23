@@ -1,0 +1,34 @@
+@import '../../index.scss';
+
+.welcome {
+    width: 100%;
+    display: flex;
+    // outline: 1px solid lime;
+
+    .left,
+    .right {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+    }
+
+    .welcome__title {
+        font-size: $h1-font-size;
+        text-align: center;
+        font-weight: $font-semi-bold;
+        margin-bottom: 1rem;
+    }
+
+    .about__text {
+        font-size: $normal-font-size;
+        text-align: center;
+        text-align: start;
+    }
+
+    img {
+        max-height: 20rem;
+        margin: 0 auto;
+    }
+}
