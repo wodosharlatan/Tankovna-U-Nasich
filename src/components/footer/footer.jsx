@@ -22,7 +22,7 @@ function Footer() {
 				</div>
 
 				<div>
-					<h1>Bar U Našich</h1>
+					<h1>Tankovna U Našich</h1>
 					<p className="footer-desc">[Popis Naseho Baru]</p>
 					<div className="social">
 						<a href="">
