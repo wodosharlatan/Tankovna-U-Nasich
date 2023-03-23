@@ -1,5 +1,5 @@
 /*==================== REUSABLE CSS CLASSES ====================*/
-@import '../../index.scss';
+@import "../../index.scss";
 
 /*==================== Reservation Style ====================*/
 
@@ -13,6 +13,20 @@
 	border: 1px solid #ccc;
 	outline: none;
 	border-radius: 1rem;
+
+	// change input placeholder color
+	::-webkit-input-placeholder {
+		color: black;
+	}
+	:-moz-placeholder {
+		color: black;
+	}
+	::-moz-placeholder {
+		color: black;
+	}
+	:-ms-input-placeholder {
+		color: black;
+	}
 }
 
 .section__title {
@@ -66,22 +80,6 @@
 			input[type="date"].input {
 				@include FormInputMixin;
 			}
-
-			// change input placeholder color
-			::-webkit-input-placeholder {
-				color: black;
-			}
-			:-moz-placeholder {
-				color: black;
-			}
-			::-moz-placeholder {
-				color: black;
-			}
-			:-ms-input-placeholder {
-				color: black;
-			}
-			
-
 		}
 	}
 }
@@ -91,7 +89,6 @@
 		text-align: left;
 	}
 }
-
 
 .reservation_button {
 	padding: 10px 25px;

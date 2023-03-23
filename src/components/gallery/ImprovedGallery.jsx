@@ -6,61 +6,61 @@ function ImprovedGallery() {
 
 	const galleryImages = [
 		{
-			img: "../Images/5.png",
+			img: "../Images/5.jpg",
 		},
 		{
-			img: "../Images/1.png",
+			img: "../Images/1.jpg",
 		},
 		{
-			img: "../Images/2.png",
+			img: "../Images/2.jpg",
 		},
 		{
-			img: "../Images/4.png",
+			img: "../Images/4.jpg",
 		},
 		{
-			img: "../Images/11.png",
+			img: "../Images/11.jpg",
 		},
 		{
-			img: "../Images/0.png",
+			img: "../Images/0.jpg",
 		},
 		{
-			img: "../Images/6.png",
+			img: "../Images/6.jpg",
 		},
 		{
-			img: "../Images/7.png",
+			img: "../Images/7.jpg",
 		},
 		{
-			img: "../Images/8.png",
+			img: "../Images/8.jpg",
 		},
 		{
-			img: "../Images/9.png",
+			img: "../Images/9.jpg",
 		},
 		{
-			img: "../Images/10.png",
+			img: "../Images/10.jpg",
 		},
 		{
-			img: "../Images/3.png",
+			img: "../Images/3.jpg",
 		},
 		{
-			img: "../Images/12.png",
+			img: "../Images/12.jpg",
 		},
 		{
-			img: "../Images/13.png",
+			img: "../Images/13.jpg",
 		},
 		{
-			img: "../Images/14.png",
+			img: "../Images/14.jpg",
 		},
 		{
-			img: "../Images/15.png",
+			img: "../Images/15.jpg",
 		},
 		{
-			img: "../Images/16.png",
+			img: "../Images/16.jpg",
 		},
 		{
-			img: "../Images/17.png",
+			img: "../Images/17.jpg",
 		},
 		{
-			img: "../Images/18.png",
+			img: "../Images/18.jpg",
 		},
 	];
 	return (
