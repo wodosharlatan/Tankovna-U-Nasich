@@ -1,193 +1,96 @@
 import "./menu.scss";
 
+const pr = [
+	{
+		name: "nealkoholické nápoje",
+		products: [
+			{
+				name: "Classic Coca-Cola",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+			{
+				name: "Limonáda",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+			{
+				name: "Sprite",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+			{
+				name: "Fanta",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+
+		]
+	},
+	{
+		name: "alkohol",
+		products: [
+			{
+				name: "Pivo",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+			{
+				name: "Rum",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+			{
+				name: "Vodka",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+
+		]
+	},
+	{
+		name: "pochutiny",
+		products: [
+			{
+				name: "Utopenci",
+				description: "Refreshing and bubbly",
+				price: "50Kč"
+			},
+		]
+	}
+]
+
 const Menu = () => {
-
-	const list = [
-		{
-			name: nealko,
-			products: [
-				{
-					name: "Classic Coca-Cola",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				{
-					name: "Limonáda",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				{
-					name: "Sprite",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				{
-					name: "Fanta",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				
-			],
-			name: alkohol,
-			products: [
-				{
-					name: "Pivo",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				{
-					name: "Rum",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				{
-					name: "Vodka",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				
-			],
-			name: pochutiny,
-			products: [
-				{
-					name: "Utopenci",
-					description: "Refreshing and bubbly",
-					price: "50Kč"
-				},
-				
-			]
-			
-		}
-	]
-
-
-
-
-
-
-
-
-
-
 	return (
 		<>
 			<div className="container">
-				<div className="section__title-menu">
-					<h1>Nealkoholické Nápoje</h1>
-				</div>
-				<hr></hr>
+				{
+					pr.map((sectionProduct, index) => {
+						return (
+							<div className="menu_section" key={index}>
+								<div className="section__title-menu" >
+									<h1>{sectionProduct.name}</h1>
+								</div>
 
-				<ul class="menu-list">
-					<li class="menu-item">
-						<h3>Classic </h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
+								<ul className="menu-list">
+									{sectionProduct.products.map((product, index) => {
+										return (
+											<li className="menu-item" key={index}>
+												<h3>{product.name}</h3>
+												<p className="menu-description">{product.description}</p>
+												<p className="menu-price">{product.price}</p>
+											</li>
+										)
+									})}
+								</ul>
+							</div>
 
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
+						);
+					})
+				}
 
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
 
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
 
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-				</ul>
-
-				<div className="section__title-menu">
-					<h1>Alkoholické nápoje</h1>
-				</div>
-				<hr></hr>
-
-				<ul>
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-				</ul>
-
-				<div className="section__title-menu">
-					<h1>Pochutinky</h1>
-				</div>
-				<hr></hr>
-
-				<ul>
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>
-
-					<li class="menu-item">
-						<h3>Classic Coca-Cola</h3>
-						<p class="menu-description">Refreshing and bubbly</p>
-						<p class="menu-price">50Kč</p>
-					</li>	
-				</ul>
 			</div>
 		</>
 	);
