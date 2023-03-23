@@ -1,5 +1,9 @@
 @import "../../index.scss";
 
+.menu-page.container{
+	// max-width: 1000px;
+}
+
 .section__title-menu {
 	z-index: $z-tooltip;
 	font-size: $h1-font-size;
