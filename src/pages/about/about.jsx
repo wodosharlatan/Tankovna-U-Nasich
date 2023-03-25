@@ -1,4 +1,4 @@
-import ImprovedGallery from "../../components/gallery/ImprovedGallery";
+import { Gallery } from "../../components/gallery/GalleryFunction";
 import Welcome from "../../components/welcome/welcome";
 import "./about.scss";
 
@@ -6,7 +6,7 @@ function About() {
 	return (
 		<div className="about-page container">
 			<Welcome />
-			<ImprovedGallery />
+			<Gallery />
 		</div>
 	);
 }
