@@ -70,73 +70,77 @@ export function Gallery() {
 	const [slideNumber, setSlideNumber] = useState(0);
 	const [openModal, setOpenModal] = useState(false);
 	const [loadedImageIndex, setLoadedImageIndex] = useState(0);
-  
+
 	const handleOpenModal = (index) => {
-	  setSlideNumber(index);
-	  setOpenModal(true);
+		setSlideNumber(index);
+		setOpenModal(true);
 	};
-  
+
 	const handleCloseModal = () => {
-	  setOpenModal(false);
-	  setLoadedImageIndex(0);
+		setOpenModal(false);
 	};
-  
+
 	const handleSlideChange = (direction) => {
-	  const totalSlides = galleryImages.length;
-	  let newSlideNumber = slideNumber + direction;
-	  if (newSlideNumber < 0) {
-		newSlideNumber = totalSlides - 1;
-	  } else if (newSlideNumber >= totalSlides) {
-		newSlideNumber = 0;
-	  }
-	  setSlideNumber(newSlideNumber);
-	  setLoadedImageIndex(0);
+		const totalSlides = galleryImages.length;
+		let newSlideNumber = slideNumber + direction;
+		if (newSlideNumber < 0) {
+			newSlideNumber = totalSlides - 1;
+		} else if (newSlideNumber >= totalSlides) {
+			newSlideNumber = 0;
+		}
+		setSlideNumber(newSlideNumber);
 	};
-  
+
 	const handleImageLoad = () => {
-		setLoadedImageIndex(loadedImageIndex + 1);
+		setTimeout(() => {
+			setLoadedImageIndex(loadedImageIndex + 1);
+		}, 150);
 	};
-  
+
 	return (
-	  <>
-		<div>
-		  {openModal && (
-			<div className="sliderWrap">
-			  <IoCloseCircleOutline
-				className="Close"
-				onClick={handleCloseModal}
-			  />
-			  <IoArrowBackOutline
-				className="Prev"
-				onClick={() => handleSlideChange(-1)}
-			  />
-			  <IoArrowForwardOutline
-				className="Next"
-				onClick={() => handleSlideChange(1)}
-			  />
-			  <div className="fullScreenImage">
-				<img
-				  src={galleryImages[slideNumber].img}
-				  onLoad={handleImageLoad}
-				/>
-			  </div>
-			</div>
-		  )}
-  
-		  <div className="galleryWrap">
-			{galleryImages &&
-			  galleryImages.map((slide, index) => (
-				<div
-				  className="single"
-				  key={index}
-				  onClick={() => handleOpenModal(index)}
-				  onLoad={handleImageLoad}
-				>
-				{loadedImageIndex >= index ? (<img src={slide.img} alt={slide.alt} />) : (<div className="loading">Loading...</div>)}
+		<>
+			<div>
+				{openModal && (
+					<div className="sliderWrap">
+						<IoCloseCircleOutline
+							className="Close"
+							onClick={handleCloseModal}
+						/>
+						<IoArrowBackOutline
+							className="Prev"
+							onClick={() => handleSlideChange(-1)}
+						/>
+						<IoArrowForwardOutline
+							className="Next"
+							onClick={() => handleSlideChange(1)}
+						/>
+						<div className="fullScreenImage">
+							<img
+								src={galleryImages[slideNumber].img}
+								onLoad={handleImageLoad}
+							/>
+						</div>
+					</div>
+				)}
+
+				<div className="galleryWrap">
+					{galleryImages &&
+						galleryImages.map((slide, index) => (
+							<div
+								className="single"
+								key={index}
+								onClick={() => handleOpenModal(index)}
+								onLoad={handleImageLoad}
+							>
+								{loadedImageIndex >= index ? (
+									<img src={slide.img} alt={slide.alt} />
+								) : (
+									<div className="loading">Loading...</div>
+								)}
+							</div>
+						))}
 				</div>
-			  ))}
-		  </div>
-		</div>
-	  </>
+			</div>
+		</>
 	);
-  }
+}
