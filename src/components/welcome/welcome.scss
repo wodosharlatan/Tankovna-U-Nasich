@@ -1,35 +1,26 @@
-@import '../../index.scss';
-
 .welcome {
-    width: 100%;
-    display: flex;
-    gap: 2rem;
-    // outline: 1px solid lime;
+	width: 100%;
+	display: flex;
+	gap: 2rem;
+	padding-bottom: 2.5rem;
 
-    .left,
-    .right {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start;
-    }
+	.left,
+	.right {
+		flex: 1;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: start;
+	}
 
-    .welcome__title {
-        font-size: $h1-font-size;
-        text-align: center;
-        font-weight: $font-semi-bold;
-        margin-bottom: 1rem;
-    }
+	.about__text {
+		text-align: center;
+		text-align: start;
+	}
 
-    .about__text {
-        font-size: $normal-font-size;
-        text-align: center;
-        text-align: start;
-    }
-
-    img {
-        max-height: 20rem;
-        margin: 0 auto;
-    }
+	img {
+		max-height: 20rem;
+		margin: 0 auto;
+	}
 }
+
