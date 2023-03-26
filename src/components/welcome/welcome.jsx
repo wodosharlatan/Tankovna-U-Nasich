@@ -4,7 +4,7 @@ const Welcome = () => {
 	return (
 		<div className="welcome">
 			<div className="left">
-				<img src="https://i.seadn.io/gae/2hDpuTi-0AMKvoZJGd-yKWvK4tKdQr_kLIpB_qSeMau2TNGCNidAosMEvrEXFO9G6tmlFlPQplpwiqirgrIPWnCKMvElaYgI-HiVvXc?auto=format&w=1000" alt="random"/>
+				<img src="../Images/Beer.webp" alt="random"/>
 			</div>
 
 			<div className="right">
