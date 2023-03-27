@@ -526,6 +526,286 @@ const pr = [
 			},
 		],
 	},
+	{
+		name: "Pivo",
+		products: [
+			{
+				name: "Staropramen 11° z tanku",
+				description: "0,3l",
+				price: "23Kč",
+			},
+			{
+				name: "Staropramen 11° z tanku",
+				description: "0,5l",
+				price: "38Kč",
+			},
+			{
+				name: "Staropramen 12° Extra Chlemená",
+				description: "0,4l",
+				price: "40Kč",
+			},
+			{
+				name: "Lomnice 11°",
+				description: "0,3l",
+				price: "29Kč",
+			},
+			{
+				name: "Lomnice 11°",
+				description: "0,5l",
+				price: "48Kč",
+			},	
+			{
+				name: "Ostravar Černá Barbora",
+				description: "0,4l",
+				price: "38Kč",
+			},
+			{
+				name: "Řezané",
+				description: "0,3l",
+				price: "23Kč",
+			},
+			{
+				name: "Řezané",
+				description: "0,5l",
+				price: "38Kč",
+			},
+			{
+				name: "Staropramen Cool Grep Nealko čepovaný",
+				description: "0,5l",
+				price: "38Kč",
+			},
+			{
+				name: "Staropramen 10° plech",
+				description: "0,5l",
+				price: "36Kč",
+			},
+			{
+				name: "Staropramen 11° plech",
+				description: "0,5l",
+				price: "38Kč",
+			},
+			{
+				name: "Staropramen 12° plech",
+				description: "0,5l",
+				price: "40Kč",
+			},
+			{
+				name: "Hořká ze Sklepa plech",
+				description: "0,5l",
+				price: "40Kč",
+			},
+			{
+				name: "Mustang 11° plech",
+				description: "0,5l",
+				price: "44Kč",
+			},
+			{
+				name: "Černá Barbora plech",
+				description: "0,5l",
+				price: "44Kč",
+			},
+			{
+				name: "Staropramen Cool Nealko",
+				description: "0,5l",
+				price: "38Kč",
+			},
+			{
+				name: "Birel Světlý, Polotmavý",
+				description: "0,5l",
+				price: "35Kč",
+			},
+			{
+				name: "Frisco [dle aktuální nabídky]",
+				description: "0,33l",
+				price: "45Kč",
+			},
+		],
+	},
+	{
+		name: "Vína / Sekty",
+		products: [
+			{
+				name: "Ryzlink Rýnský víno bílé suché",
+				description: "0,1l",
+				price: "26Kč",
+			},
+			{
+				name: "Tarmín víno bílé polosladké",
+				description: "0,1l",
+				price: "26Kč",
+			},
+			{
+				name: "Zwegeltrebe Rosé víno růžové polosuché",
+				description: "0,1l",
+				price: "26Kč",
+			},
+			{
+				name: "Cabernet Sauvignon víno červené suché",
+				description: "0,1l",
+				price: "26Kč",
+			},
+			{
+				name: "Proseco",
+				description: "0,1l",
+				price: "42Kč",
+			},
+			{
+				name: "Bohemia Sekt - Demi",
+				description: "0,75l",
+				price: "260Kč",
+			},
+		],
+	},
+	{
+		name: "Aperitivy",
+		products: [
+			{
+				name: "Castellino Bianco",
+				description: "0,1l",
+				price: "28Kč",
+			},
+			{
+				name: "Aperol Spritz",
+				description: "0,24l",
+				price: "102Kč",
+			},
+		],
+	},
+	{
+		name: "Tepelné nápoje",
+		products: [
+			{
+				name: "Turecká káva",
+				description: "",
+				price: "34Kč",
+			},
+			{
+				name: "Čaj [dle aktuální nabídky]",
+				description: "",
+				price: "34Kč",
+			},
+			{
+				name: "Grog",
+				description: "",
+				price: "44Kč",
+			},
+			{
+				name: "Horká Griotka",
+				description: "",
+				price: "44Kč",
+			},
+			{
+				name: "Velký čaj [dle aktuální nabídky]",
+				description: "0,5l",
+				price: "38Kč",
+			},
+			{
+				name: "Capuccino",
+				description: "",
+				price: "52Kč",
+			},
+			{
+				name: "Espresso",
+				description: "",
+				price: "42Kč",
+			},
+			{
+				name: "Latte Macchiato",
+				description: "",
+				price: "60Kč",
+			},
+			{
+				name: "Svařené víno",
+				description: "",
+				price: "56Kč",
+			},
+			{
+				name: "Smetana do kávy",
+				description: "10ml",
+				price: "5Kč",
+			},
+			{
+				name: "Med",
+				description: "1ks",
+				price: "7Kč",
+			},
+		],
+	},
+	{
+		name: "Pochutiny",
+		products: [
+			{
+				name: "Oplatky [dle aktuální nabídky]",
+				description: "1ks",
+				price: "18Kč",
+			},
+			{
+				name: "Žvýkačky",
+				description: "balení",
+				price: "22Kč",
+			},
+			{
+				name: "Aršídy",
+				description: "100g",
+				price: "30Kč",
+			},
+			{
+				name: "Tyčinky",
+				description: "balení",
+				price: "32Kč",
+			},
+			{
+				name: "Chipsy",
+				description: "balení",
+				price: "38Kč",
+			},
+			{
+				name: "Kešu",
+				description: "60g",
+				price: "42Kč",
+			},
+			{
+				name: "Utopenec",
+				description: "1ks",
+				price: "48Kč",
+			},
+			{
+				name: "Grilovaný hermelín",
+				description: "1ks",
+				price: "78Kč",
+			},
+			{
+				name: "Grilovaná klobása",
+				description: "1ks",
+				price: "78Kč",
+			},
+			{
+				name: "Nakládaný hermelín",
+				description: "1ks",
+				price: "78Kč",
+			},
+		],
+	},
+	{
+		name: "Cigarety",
+		products: [
+			{
+				name: "Cigarety [dle aktuální nabídky]",
+				description: "",
+				price: "",
+			},
+			{
+				name: "Heets [dle aktuální nabídky]",
+				description: "",
+				price: "",
+			},
+			{
+				name: "Zapalovač",
+				description: "1ks",
+				price: "15Kč",
+			},
+		],
+	},
 ];
 
 const Menu = () => {
