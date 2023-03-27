@@ -4,9 +4,19 @@
 	cursor: pointer;
 	position: fixed;
 	color: $white-text-color;
-	z-index: 9999;
+	z-index: $z-modal;
 	opacity: 0.8;
 	font-size: 5rem;
+}
+
+@mixin imageMixin {
+	max-width: 100%;
+	align-self: center;
+
+	&:hover {
+		transform: scale(1.02);
+		transition: all 0.3s ease-in-out;
+	}
 }
 
 .galleryWrap {
@@ -22,13 +32,12 @@
 		display: flex;
 
 		img {
-			max-width: 100%;
-			align-self: center;
+			@include imageMixin;
+		}
 
-			&:hover {
-				transform: scale(1.02);
-				transition: all 0.3s ease-in-out;
-			}
+		.bluredImage {
+			z-index: $z-tooltip;
+			@include imageMixin;
 		}
 	}
 }
@@ -39,7 +48,7 @@
 	left: 0;
 	bottom: 0;
 	right: 0;
-	z-index: 999;
+	z-index: $z-modal;
 	background: rgba(0, 0, 0, 0.8);
 	display: flex;
 	align-items: center;

@@ -111,11 +111,7 @@ export function Gallery() {
 		setSlideNumber(newSlideNumber);
 	};
 
-	const handleImageLoad = () => {
-		setTimeout(() => {
-			setLoadedImageIndex(loadedImageIndex + 1);
-		}, 300);
-	};
+
 
 	return (
 		<>
@@ -137,7 +133,7 @@ export function Gallery() {
 						<div className="fullScreenImage">
 							<img
 								src={galleryImages[slideNumber].img}
-								onLoad={handleImageLoad}
+
 							/>
 						</div>
 					</div>
@@ -150,20 +146,15 @@ export function Gallery() {
 								className="single"
 								key={index}
 								onClick={() => handleOpenModal(index)}
-								onLoad={handleImageLoad}
 							>
-								{loadedImageIndex >= index ? (
-									<img src={slide.img} alt={slide.alt} />
-								) : (
-									<Blurhash
-										hash={slide.hash}
-										width={266}
-										height={178.85}
-										resolutionX={32}
-										resolutionY={32}
-										punch={1}
-									/>
-								)}
+								<img src={slide.img} alt={slide.alt} />
+								<Blurhash
+									className="bluredImage"
+									hash={slide.hash}
+									resolutionX={32}
+									resolutionY={32}
+									punch={1}
+								/>
 							</div>
 						))}
 				</div>
