@@ -326,6 +326,206 @@ const pr = [
 			},
 		],
 	},
+	{
+		name: "Likéry Bylinné",
+		products: [
+			{
+				name: "Fernet Stock",
+				description: "4cl",
+				price: "44Kč",
+			},
+			{
+				name: "Feret Stock Citrus",
+				description: "4cl",
+				price: "44Kč",
+			},
+			{
+				name: "Becherovka",
+				description: "4cl",
+				price: "46Kč",
+			},
+			{
+				name: "Jägermeister",
+				description: "4cl",
+				price: "62Kč",
+			},
+		],
+	},
+	{
+		name: "Ostatní Lihoviny / Destiláty",
+		products: [
+			{
+				name: "Božkov Tuzemský",
+				description: "4cl",
+				price: "40Kč",
+			},
+			{
+				name: "Božkov Kávový",
+				description: "4cl",
+				price: "42Kč",
+			},
+			{
+				name: "Božkov Mandlový",
+				description: "4cl",
+				price: "42Kč",
+			},
+			{
+				name: "Božkov Mangový",
+				description: "4cl",
+				price: "62Kč",
+			},
+			{
+				name: "Božkov Bílý",
+				description: "4cl",
+				price: "42Kč",
+			},
+			{
+				name: "Malinovice R.Jelínek",
+				description: "4cl",
+				price: "42Kč",
+			},
+			{
+				name: "Hruškovice R.Jelínek",
+				description: "4cl",
+				price: "42Kč",
+			},
+			{
+				name: "Slivovice R.Jelínek",
+				description: "4cl",
+				price: "42Kč",
+			},
+			{
+				name: "Absinth",
+				description: "4cl",
+				price: "74Kč",
+			},
+			{
+				name: "Bartida Tuzemský",
+				description: "4cl",
+				price: "38Kč",
+			},
+		],
+	},
+	{
+		name: "Drinky",
+		products: [
+			{
+				name: "Summer Spritz",
+				description: "0,3l",
+				price: "128Kč",
+			},
+			{
+				name: "Kozičky",
+				description: "0,24l",
+				price: "80Kč",
+			},
+			{
+				name: "Huggo Secco",
+				description: "0,34l",
+				price: "98Kč",
+			},
+			{
+				name: "Tom Cllins",
+				description: "0,24l",
+				price: "104Kč",
+			},
+			{
+				name: "Bellini",
+				description: "0,3l",
+				price: "98Kč",
+			},
+			{
+				name: "Chupito",
+				description: "4cl",
+				price: "56Kč",
+			},
+			{
+				name: "Chupito Italiano",
+				description: "4cl",
+				price: "56Kč",
+			},
+		],
+	},
+	{
+		name: "Nealkoholické Nápoje",
+		products: [
+			{
+				name: "Pepsi",
+				description: "0,25l",
+				price: "40Kč",
+			},
+			{
+				name: "Tonic Schweppes",
+				description: "0,25l",
+				price: "40Kč",
+			},
+			{
+				name: "Tonic Schweppes Zázvor",
+				description: "0,25l",
+				price: "40Kč",
+			},
+			{
+				name: "Tonic Schweppes Pink",
+				description: "0,25l",
+				price: "40Kč",
+			},
+			{
+				name: "Mattoni jemně perlivá, perlivá, neperlivá",
+				description: "0,33l",
+				price: "34Kč",
+			},
+			{
+				name: "Kofola Točená",
+				description: "0,1l",
+				price: "10Kč",
+			},
+			{
+				name: "Džus [dle aktuální nabídky]",
+				description: "0,1l",
+				price: "18Kč",
+			},
+			{
+				name: "Voda z kohoutku",
+				description: "0,3l",
+				price: "15Kč",
+			},
+			{
+				name: "Voda z kohoutku",
+				description: "0,5l",
+				price: "20Kč",
+			},
+			{
+				name: "Pepsi",
+				description: "0,1l",
+				price: "18Kč",
+			},
+			{
+				name: "Mirinda",
+				description: "0,1l",
+				price: "18Kč",
+			},
+			{
+				name: "7 UP",
+				description: "0,1l",
+				price: "18Kč",
+			},
+			{
+				name: "Tonic [dle aktuální nabídky]",
+				description: "0,1l",
+				price: "18Kč",
+			},
+			{
+				name: "Rockstar",
+				description: "0,5l",
+				price: "50Kč",
+			},
+			{
+				name: "Red Bull",
+				description: "0,25l",
+				price: "66Kč",
+			},
+		],
+	},
 ];
 
 const Menu = () => {
