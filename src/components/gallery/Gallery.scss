@@ -36,8 +36,9 @@
 		}
 
 		.bluredImage {
-			z-index: $z-tooltip;
+			z-index: $z-modal;
 			@include imageMixin;
+		
 		}
 	}
 }
