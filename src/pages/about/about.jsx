@@ -5,7 +5,7 @@ import "./about.scss";
 function About() {
 	return (
 		<div className="about-page container">
-			<Welcome />
+			<Welcome hideBtn />
 			<Gallery />
 		</div>
 	);

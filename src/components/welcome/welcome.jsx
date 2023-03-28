@@ -1,10 +1,10 @@
 import "./welcome.scss";
 
-const Welcome = () => {
+const Welcome = (props) => {
 	return (
 		<div className="welcome">
 			<div className="left">
-				<img src="../Images/Beer.webp" alt="random"/>
+				<img src="../Images/Beer.webp" alt="random" />
 			</div>
 
 			<div className="right">
@@ -19,6 +19,9 @@ const Welcome = () => {
 						zahřátí. Nenechte si ujít atmosféru našeho baru a přijďte si užít
 						chvíle plné dobrého pití a jídla. Těšíme se na vaši návštěvu!
 					</p>
+					{!props.hideBtn && (
+						<button className="btn btn--primary">Objednat</button>
+					)}
 				</div>
 			</div>
 		</div>
