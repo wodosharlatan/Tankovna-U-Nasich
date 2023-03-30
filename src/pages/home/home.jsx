@@ -1,6 +1,6 @@
 import './home.scss';
 import Welcome from '../../components/welcome/welcome.jsx'
-import Menu from '../menu/menu';
+import HomeMenu from '../../components/menu-home/menuHome.jsx'
 import Reservation from '../reservation/reservation';
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
             <h1>Home</h1>
             <Welcome />
             <hr />
-            <Menu />
+            <HomeMenu />
             <hr />
             <Reservation />
         </div>

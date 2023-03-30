@@ -816,9 +816,7 @@ const Menu = () => {
 					return (
 						<div className="menu_section" key={index}>
 							<div className="section__title-menu">
-								<hr />
 								<h1>{sectionProduct.name}</h1>
-								<hr />
 							</div>
 
 							<ul className="menu-list">
