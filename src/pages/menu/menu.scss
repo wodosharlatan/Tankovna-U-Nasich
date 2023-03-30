@@ -1,5 +1,10 @@
 @import "../../index.scss";
 
+/*
+* {
+	 border: 1px solid red;
+}
+*/
 
 
 
@@ -8,28 +13,36 @@
 	font-size: $h1-font-size;
 	text-align: center;
 	font-weight: $font-semi-bold;
-	//first child of the section title set padding top to 2rem
 	&:first-child {
 		padding-top: 2rem;
+		padding-bottom: 2rem;
 	}
 }
 
-.menu-item {
-	// set menu to flex between
-	display: flex;
-	justify-content: space-between;
-	// set padding to 1rem
-	padding: 1rem;	
-	
-	.menu-price{
-		//flex to center
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		//set font size to 1.5rem
-		font-size: 1.5rem;
-		//set font weight to semi bold
-		font-weight: $font-semi-bold;
-	}
 
+//display 2 menu items per row
+.menu-list{
+	display: flex;
+	flex-wrap: wrap;
+	//set padding to 1rem
+	padding: 1rem;
+	.menu-item {
+		width: calc(50% - 0.5rem);
+		// set menu to flex between
+		display: flex;
+		justify-content: space-between;
+		// set padding to 1rem
+		padding: 1rem;
+	
+		.menu-price {
+			//flex to center
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			//set font size to 1.5rem
+			font-size: 1.5rem;
+			//set font weight to semi bold
+			font-weight: $font-semi-bold;
+		}
+	}
 }

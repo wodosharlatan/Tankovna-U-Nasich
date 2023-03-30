@@ -553,7 +553,7 @@ const pr = [
 				name: "Lomnice 11°",
 				description: "0,5l",
 				price: "48Kč",
-			},	
+			},
 			{
 				name: "Ostravar Černá Barbora",
 				description: "0,4l",
@@ -816,7 +816,9 @@ const Menu = () => {
 					return (
 						<div className="menu_section" key={index}>
 							<div className="section__title-menu">
+								<hr />
 								<h1>{sectionProduct.name}</h1>
+								<hr />
 							</div>
 
 							<ul className="menu-list">
