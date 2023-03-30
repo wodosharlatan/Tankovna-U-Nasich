@@ -9,16 +9,6 @@
 	font-size: 5rem;
 }
 
-@mixin imageMixin {
-	max-width: 100%;
-	align-self: center;
-
-	&:hover {
-		transform: scale(1.02);
-		transition: all 0.3s ease-in-out;
-	}
-}
-
 .galleryWrap {
 	display: grid;
 	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -32,13 +22,14 @@
 		display: flex;
 
 		img {
-			@include imageMixin;
-		}
+			max-width: 100%;
+			align-self: center;
+			transition: all 0.3s ease-in-out;
 
-		.bluredImage {
-			z-index: $z-modal;
-			@include imageMixin;
-		
+			&:hover {
+				transform: scale(1.02);
+				transition: all 0.3s ease-in-out;
+			}
 		}
 	}
 }

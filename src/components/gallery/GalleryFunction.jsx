@@ -5,84 +5,83 @@ import {
 	IoArrowBackOutline,
 	IoCloseCircleOutline,
 } from "react-icons/io5";
-import { Blurhash } from "react-blurhash";
 
 const galleryImages = [
 	{
 		img: "../Images/0.jpg",
-		hash: "UJEouXK#RQWa*JXSw]xZ]p$ROEo|,^Rno|tP",
+		thumbnail: "../Images/Thumbnail/0.jpg",
 	},
 	{
 		img: "../Images/1.jpg",
-		hash: "UPGRnsOpWFS4?]X8xaoL]owNtQf7+cWFX8W=",
+		thumbnail: "../Images/Thumbnail/1.jpg",
 	},
 	{
 		img: "../Images/2.jpg",
-		hash: "UMGb9HKLNJS#.Soz%0n%|2w3oyjGz=aMbabb",
+		thumbnail: "../Images/Thumbnail/2.jpg",
 	},
 	{
 		img: "../Images/3.jpg",
-		hash: "U31PB@l?oap@d7dGlPaPUdi4ljcni1cpZki~",
+		thumbnail: "../Images/Thumbnail/3.jpg",
 	},
 	{
 		img: "../Images/4.jpg",
-		hash: "UGHw=8}*?aJ73r0,RTRQ=E?bV?xb^Q-:X4%2",
+		thumbnail: "../Images/Thumbnail/4.jpg",
 	},
 	{
 		img: "../Images/5.jpg",
-		hash: "UFIEFD^G?bEj4914$+nO,B~Wi{%2=L?bNG%3",
+		thumbnail: "../Images/Thumbnail/5.jpg",
 	},
 	{
 		img: "../Images/6.jpg",
-		hash: "UAGQ?~Dj_49a_M0L-B9aR6S$S}$$=|xZTJIo",
+		thumbnail: "../Images/Thumbnail/6.jpg",
 	},
 	{
 		img: "../Images/7.jpg",
-		hash: "UFGk2b;NjHM_~oR-n+NGM|E%S$r?-pX8tkIp",
+		thumbnail: "../Images/Thumbnail/7.jpg",
 	},
 	{
 		img: "../Images/8.jpg",
-		hash: "UCF5gK5?EK9Z~oM~adNG00aJ%Mxu02%Mozn#",
+		thumbnail: "../Images/Thumbnail/8.jpg",
 	},
 	{
 		img: "../Images/9.jpg",
-		hash: "UAEVE000+@xv*I4;t6nO00$*x^D*MJODbXkX",
+		thumbnail: "../Images/Thumbnail/9.jpg",
 	},
 	{
 		img: "../Images/10.jpg",
-		hash: "UGIE2:00S_El_K9voyIp00-pxFM{DjjcX9j]",
+		thumbnail: "../Images/Thumbnail/10.jpg",
 	},
 	{
 		img: "../Images/11.jpg",
-		hash: "UGFE.R-:0yW._N={M{e.4;J7xas:0LR-xuof",
+		thumbnail: "../Images/Thumbnail/11.jpg",
 	},
 	{
 		img: "../Images/12.jpg",
-		hash: "UOGt=}-UNGs,_MxtRjniShs.axRk4:R+S2WB",
+		thumbnail: "../Images/Thumbnail/12.jpg",
 	},
 	{
 		img: "../Images/13.jpg",
-		hash: "USGkUYM{NZNH~pRjbbR+S2R*t7s:EMWBoet6",
+		thumbnail: "../Images/Thumbnail/13.jpg",
 	},
 	{
 		img: "../Images/14.jpg",
-		hash: "UDH_xxM_%h-;~2RPR.ae~9WAM{Ri?Exts:ax",
+		thumbnail: "../Images/Thumbnail/14.jpg",
 	},
 	{
 		img: "../Images/15.jpg",
-		hash: "UDG8=t00kr00_NWAM_IUIojaV@%3nOxvIUt7",
+		thumbnail: "../Images/Thumbnail/15.jpg",
 	},
 	{
 		img: "../Images/16.jpg",
-		hash: "UHH1q_05tPV]~PN2W:s:IUIrWXs,IuM|a~ob",
+		thumbnail: "../Images/Thumbnail/16.jpg",
 	},
 	{
 		img: "../Images/17.jpg",
-		hash: "UFH_3V04?D9e~QD;NajdD%ItX8sS59WAxtoI",
+		thumbnail: "../Images/Thumbnail/17.jpg",
 	},
 	{
 		img: "../Images/18.jpg",
-		hash: "UYIXH4~SIW9bobaxIqWFM{f5R+WEbct6xZRk",
+		thumbnail: "../Images/Thumbnail/18.jpg",
 	},
 ];
 
@@ -144,17 +143,7 @@ export function Gallery() {
 								key={index}
 								onClick={() => handleOpenModal(index)}
 							>
-								<Blurhash
-									className="bluredImage"
-									hash={slide.hash}
-									resolutionX={32}
-									resolutionY={32}
-									punch={1}
-									width="100%"
-									height="100%"
-								/>
-
-								<img src={slide.img} alt={slide.alt} loading="lazy" />
+								<img src={slide.thumbnail} alt={slide.alt} loading="lazy" />
 							</div>
 						))}
 				</div>

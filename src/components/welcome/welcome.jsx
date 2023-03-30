@@ -1,4 +1,5 @@
 import "./welcome.scss";
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 const Welcome = (props) => {
 	return (
@@ -8,9 +9,7 @@ const Welcome = (props) => {
 			</div>
 
 			<div className="right">
-				<h1 className="section__title">
-					Pijte a Ochutnejte!
-				</h1>
+				<h1 className="section__title">Pijte a Ochutnejte!</h1>
 				<div className="about__text">
 					<p>
 						Vítejte v našem Baru, kde nabízíme široký výběr piv a tvrdých
@@ -19,8 +18,14 @@ const Welcome = (props) => {
 						zahřátí. Nenechte si ujít atmosféru našeho baru a přijďte si užít
 						chvíle plné dobrého pití a jídla. Těšíme se na vaši návštěvu!
 					</p>
+
 					{!props.hideBtn && (
-						<button className="btn btn--primary">Objednat</button>
+						<div className="button_div">
+							<button className="welcome_button">
+								<a href="/about/"> Číst Dále </a>
+								<IoArrowForwardOutline className="icon" />
+							</button>
+						</div>
 					)}
 				</div>
 			</div>
