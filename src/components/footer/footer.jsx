@@ -10,13 +10,13 @@ function Footer() {
 					<h1>Kontaktujte Nás</h1>
 					<div>
 						<a className="footer-link">
-							<span>[ ADRESA ]</span>
+							<span>Nám. Svobody 20, 506 01 Jičín</span>
 						</a>
 						<a className="footer-link">
-							<span>[ CISLO ]</span>
+							<span>tel: +420 605 191 896</span>
 						</a>
 						<a className="footer-link">
-							<span>[ EMAIL ] </span>
+							<span>info@tankovnaunasich.cz</span>
 						</a>
 					</div>
 				</div>
@@ -45,7 +45,6 @@ function Footer() {
 					</a>
 				</div>
 			</div>
-
 		</footer>
 	);
 }

@@ -1,8 +1,15 @@
+@import "../../index.scss";
+
 .welcome {
 	width: 100%;
 	display: flex;
 	gap: 2rem;
 	padding-bottom: 2.5rem;
+
+	.section__title {
+		margin: 1rem 0;
+		text-align: start;
+	}
 
 	.left,
 	.right {
@@ -24,3 +31,45 @@
 	}
 }
 
+.button_div {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	padding-top: 1rem;
+	.welcome_button {
+		padding: 10px 15px;
+		border: none;
+		border-radius: 50px;
+		cursor: pointer;
+		transition: all 0.3s ease 0s;
+		background-color: rgba(255, 190, 51, 0.9);
+
+		// center icon
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		&:hover {
+			background-color: rgba(255, 190, 51, 1);
+			font-weight: $font-medium;
+			.icon {
+				transition: all 0.3s ease-in-out;
+				margin-left: 7.5px;
+			}
+		}
+
+		a {
+			text-decoration: none;
+			color: $black-text-color;
+			font-size: $h2-font-size;
+			font-weight: $font-medium;
+		}
+
+		.icon {
+			margin-left: 3px;
+			transition: all 0.3s ease-in-out;
+			font-size: 1rem;
+			font-weight: $font-medium;
+		}
+	}
+}
