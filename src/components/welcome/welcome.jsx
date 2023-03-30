@@ -22,7 +22,7 @@ const Welcome = (props) => {
 					{!props.hideBtn && (
 						<div className="button_div">
 							<button className="welcome_button">
-								<a href="/about/"> Číst Dále </a>
+								<a href="/about/"> Zobrazit Galerii </a>
 								<IoArrowForwardOutline className="icon" />
 							</button>
 						</div>
