@@ -1,6 +1,6 @@
 @import "../../index.scss";
 
-.welcome {
+.homeMenu {
 	width: 100%;
 	display: flex;
 	gap: 2rem;
@@ -20,7 +20,7 @@
 		align-items: start;
 	}
 
-	.about__text {
+	.homeMenu__text {
 		text-align: center;
 		text-align: start;
 	}
