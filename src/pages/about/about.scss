@@ -4,4 +4,38 @@
 	.welcome {
 		margin-bottom: 2rem;
 	}
+
+
+	.galleryWrap {
+		.single img {
+			opacity: 0;
+		}
+
+		$delay: 0.1s;
+		$duration: 0.8s;
+
+		@for $i from 1 through 19 {
+			.single:nth-child(#{$i}) img {
+				animation: fadeIn #{$duration} ease;
+				animation-delay: #{$i * $delay};
+				animation-fill-mode: forwards;
+			}
+		}
+
+		@keyframes fadeIn {
+			0% {
+				opacity: 0;
+				scale: 0.5;
+			}
+
+			70% {
+				scale: 1;
+			}
+
+			100% {
+				opacity: 1;
+			}
+		}
+
+	}
 }
