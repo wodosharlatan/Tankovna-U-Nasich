@@ -7,10 +7,16 @@ function HomeMenu() {
 		<>
 			<div className="homeMenu">
 				<div className="left">
-					<h1 className="section__title"> Menu MENU (so true(real))!</h1>
+					<h1 className="section__title"> Nápojový lístek </h1>
 					<div className="homeMenu__text">
 						<p>
-							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut consequatur dolores consequuntur alias illum labore, corrupti tempora nostrum quisquam omnis ex, quibusdam sed porro reiciendis, nam magni saepe cupiditate at!
+							Náš bar nabízí široký výběr nápojů, včetně kvalitních piv a
+							tvrdého alkoholu. Naše menu je navrženo tak, aby doplňovalo chuť
+							našich nápojů, k dispozici je malé občerstvení a sendviče. Ať už
+							máte náladu na lehkou plzeň nebo silnou IPA, my vám pomůžeme.
+							Nabízíme také různé whisky, rumy, giny a další nápoje podle vašich
+							preferencí. Přijďte si k nám užít skvělou noc s přáteli a nechte
+							náš zkušený personál doporučit ten ideální drink pro vás.
 						</p>
 
 						<div className="button_div">
@@ -22,12 +28,12 @@ function HomeMenu() {
 					</div>
 				</div>
 
-
 				<div className="right">
-					<img src="https://media.tenor.com/Dc5SGhuskTUAAAAC/old-guy-falling-down-stairs.gif" alt="random" />
+					<img
+						src="../Images/Menu.png"
+						alt="menu image"
+					/>
 				</div>
-
-
 			</div>
 		</>
 	);

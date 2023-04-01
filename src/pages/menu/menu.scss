@@ -30,7 +30,7 @@
 	gap: 0 $column-gap;
 
 	.menu-item {
-		width: calc(50% - #{$column-gap / 2});
+		width: calc(50% - 2.5rem);
 		// set menu to flex between
 		display: flex;
 		justify-content: space-between;
