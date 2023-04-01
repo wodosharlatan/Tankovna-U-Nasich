@@ -1,6 +1,6 @@
 import "./menu.scss";
 
-const pr = [
+let pr = [
 	{
 		name: "Tennessee Whiskey",
 		products: [
@@ -63,16 +63,6 @@ const pr = [
 				name: "GlenDronach 12 y.o.",
 				description: "4cl",
 				price: "140Kč",
-			},
-		],
-	},
-	{
-		name: "Brandy A Cognac",
-		products: [
-			{
-				name: "Metaxa 5*",
-				description: "4cl",
-				price: "54Kč",
 			},
 		],
 	},
@@ -163,6 +153,16 @@ const pr = [
 				name: "Bombay Sapphire",
 				description: "4cl",
 				price: "74Kč",
+			},
+		],
+	},
+	{
+		name: "Brandy A Cognac",
+		products: [
+			{
+				name: "Metaxa 5*",
+				description: "4cl",
+				price: "54Kč",
 			},
 		],
 	},
@@ -809,6 +809,29 @@ const pr = [
 ];
 
 const Menu = () => {
+
+	// sort sections by name
+	// pr = pr.sort((a, b) => {
+	// 	if (a.name < b.name) {
+	// 		return -1;
+	// 	}
+	// 	if (a.name > b.name) {
+	// 		return 1;
+	// 	}
+	// 	return 0;
+	// });
+
+	// sort sections by count
+	// pr = pr.sort((a, b) => {
+	// 	if (a.products.length < b.products.length) {
+	// 		return 1;
+	// 	}
+	// 	if (a.products.length > b.products.length) {
+	// 		return -1;
+	// 	}
+	// 	return 0;
+	// });
+
 	return (
 		<>
 			<div className="container">
@@ -824,11 +847,15 @@ const Menu = () => {
 									return (
 										<>
 											<li className="menu-item" key={index}>
-												<div>
-													<h3>{product.name}</h3>
-													<p className="menu-description">
-														{product.description}
-													</p>
+												<div className="menu-product">
+													<h3 className="menu-product-name">{product.name}
+														{
+															product.description &&
+															<span className="menu-description">
+																- {product.description}
+															</span>
+														}
+													</h3>
 												</div>
 
 												<p className="menu-price">{product.price}</p>
