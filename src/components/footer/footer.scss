@@ -40,4 +40,14 @@ footer {
 .footer-desc {
 	color: $white-text-color;
 	font-size: $h3-font-size;
+	padding-bottom: .5rem;
+}
+
+.copyright{
+	color: gray;
+	text-decoration: none;
+	&:hover,
+	&:visited{
+		text-decoration: none;
+	}
 }

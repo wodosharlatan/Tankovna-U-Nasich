@@ -3,6 +3,8 @@ import "./footer.scss";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Footer() {
+
+
 	return (
 		<footer>
 			<div className="container">
@@ -23,7 +25,7 @@ function Footer() {
 
 				<div>
 					<h1>Tankovna U Našich</h1>
-					<p className="footer-desc">[Popis Naseho Baru]</p>
+					<p className="footer-desc">Tam, kde pivo teče proudem a zákazníky těší každým coulem!</p>
 					<div className="social">
 						<a href="">
 							<FaFacebook className="FooterIcon" />
@@ -35,6 +37,10 @@ function Footer() {
 							<FaInstagram className="FooterIcon" />
 						</a>
 					</div>
+					<h6 >
+					<a className="copyright" target="_blank" href="https://bosic.xyz/"> &copy; Copyright {new Date().getFullYear()}, Tomáš Bosák</a>
+					<a className="copyright" target="_blank"  href="https://www.matejmichalek.com/"> & Matěj Michálek &copy;</a>
+					</h6>
 				</div>
 
 				<div>

@@ -1,19 +1,26 @@
-import './home.scss';
-import Welcome from '../../components/welcome/welcome.jsx'
-import HomeMenu from '../../components/menu-home/menuHome.jsx'
-import Reservation from '../reservation/reservation';
+import "./home.scss";
+import Welcome from "../../components/welcome/welcome.jsx";
+import HomeMenu from "../../components/menu-home/menuHome.jsx";
+import Reservation from "../reservation/reservation";
+import HomeComponent from "../../components/HomeComponent/HomeComponent";
 
 const Home = () => {
-    return (
-        <div className="container">
-            <h1>Home</h1>
-            <Welcome />
+	return (
+		<>
+			<div className="HomeContainer">
+				<HomeComponent />
+			</div>
+            
+			<div className="container">
             <hr />
-            <HomeMenu />
-            <hr />
-            <Reservation />
-        </div>
-    );
-}
+				<Welcome />
+				<hr />
+				<HomeMenu />
+				<hr />
+				<Reservation />
+			</div>
+		</>
+	);
+};
 
 export default Home;
