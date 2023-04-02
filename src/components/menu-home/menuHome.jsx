@@ -10,7 +10,7 @@ function HomeMenu() {
 					<h1 className="section__title"> Prozkoumejte naši širokou nabídku nápojů </h1>
 					<div className="homeMenu__text">
 						<p>
-							V našem baru jsme hrdí na to, že nabízíme širokou škálu nápojů,
+							V Tankovně jsme hrdí na to, že nabízíme širokou škálu nápojů,
 							které vyhovují každému vkusu. Ať už jste příznivci kvalitních piv
 							nebo tvrdého alkoholu, máme pro vás širokou nabídku nápojů. A co
 							je to skvělý nápoj bez dokonalého doplňku? Naše menu je navrženo
