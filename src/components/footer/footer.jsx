@@ -25,7 +25,6 @@ function Footer() {
 
 				<div>
 					<h1>Tankovna U Našich</h1>
-					<p className="footer-desc">Tam, kde pivo teče proudem a zákazníky těší každým coulem!</p>
 					<div className="social">
 						<a href="">
 							<FaFacebook className="FooterIcon" />

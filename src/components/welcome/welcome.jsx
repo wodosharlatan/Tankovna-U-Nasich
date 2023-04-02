@@ -9,14 +9,14 @@ const Welcome = (props) => {
 			</div>
 
 			<div className="right">
-				<h1 className="section__title">Pijte a Ochutnejte!</h1>
+				<h1 className="section__title">Zažijte jedinečnou atmosféru naši tankovny</h1>
 				<div className="about__text">
 					<p>
-						Vítejte v našem Baru, kde nabízíme široký výběr piv a tvrdých
-						alkoholů. Doplníme váš zážitek s našimi malými pochutinami. U nás si
-						můžete vychutnat dobré pivo s přáteli nebo si dát silný drink na
-						zahřátí. Nenechte si ujít atmosféru našeho baru a přijďte si užít
-						chvíle plné dobrého pití a jídla. Těšíme se na vaši návštěvu!
+						Vítejte v našem baru, perfektním místě pro každého, kdo oceňuje
+						skvělé nápoje, chutné jídlo a příjemnou atmosféru. Jsme hrdí na to,
+						že nabízíme široký výběr piv a lihovin, abychom zajistili, že každý
+						host najde perfektní nápoj, který vyhovuje jeho chuťovým
+						preferencím.
 					</p>
 
 					{!props.hideBtn && (

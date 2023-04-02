@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
 import "./HomeComponent.scss";
 
-
 const HomeComponent = () => {
-  return (
-    <h1>Testing</h1>
-  )
-}
+	return (
+		<>
+			<p>
+        HomeComponent
+        test
+			</p>
+		</>
+	);
+};
 
 export default HomeComponent;
