@@ -21,9 +21,9 @@ $black-text-color: hsl(240, 4%, 16%);
 
 /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 $big-font-size: 2rem;
-$h1-font-size: 1.5rem;
-$h2-font-size: 1.25rem;
-$h3-font-size: 1.125rem;
+$h1-font-size: 1.3rem;
+$h2-font-size: 1.1rem;
+$h3-font-size: 1rem;
 $normal-font-size: 0.938rem;
 $small-font-size: 0.813rem;
 $smaller-font-size: 0.75rem;
@@ -149,7 +149,7 @@ a:hover {
   padding-inline: 2rem;
 }
 
-hr{
+hr {
   border: 1.75px solid $green-section;
   border-radius: 5rem;
 }
@@ -176,3 +176,24 @@ hr{
   background: #555;
 }
 
+
+
+
+
+// body {
+//   background-color: $green-section;
+
+//   * {
+//     color: white;
+//   }
+
+//   header,
+//   footer {
+//     background-color: darken($green-section, 2%);
+//   }
+
+//   hr {
+//     border-color: rgba(0, 0, 0, 0.247);
+
+//   }
+// }

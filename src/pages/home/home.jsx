@@ -7,12 +7,15 @@ import HomeComponent from "../../components/HomeComponent/HomeComponent";
 const Home = () => {
 	return (
 		<>
+			{/* <div className="test">
+				<img src="./Images/ii.png" alt="" />
+			</div> */}
 			<div className="container">
 				<HomeComponent />
 				<hr />
-				<Welcome />
-				<hr />
 				<HomeMenu />
+				<hr />
+				<Welcome />
 				<hr />
 				<Reservation />
 			</div>

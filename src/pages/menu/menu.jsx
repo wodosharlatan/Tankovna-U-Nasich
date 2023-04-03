@@ -1,6 +1,6 @@
 import "./menu.scss";
 
-let pr = [
+const pr = [
 	{
 		name: "Tennessee Whiskey",
 		products: [
