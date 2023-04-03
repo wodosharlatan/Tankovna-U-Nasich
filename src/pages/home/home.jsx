@@ -10,9 +10,8 @@ const Home = () => {
 			{/* <div className="test">
 				<img src="./Images/ii.png" alt="" />
 			</div> */}
+			<HomeComponent />
 			<div className="container">
-				<HomeComponent />
-				<hr />
 				<HomeMenu />
 				<hr />
 				<Welcome />

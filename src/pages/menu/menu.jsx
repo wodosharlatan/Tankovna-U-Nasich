@@ -845,22 +845,20 @@ const Menu = () => {
 							<ul className="menu-list">
 								{sectionProduct.products.map((product, index) => {
 									return (
-										<>
-											<li className="menu-item" key={index}>
-												<div className="menu-product">
-													<h3 className="menu-product-name">{product.name}
-														{
-															product.description &&
-															<span className="menu-description">
-																- {product.description}
-															</span>
-														}
-													</h3>
-												</div>
+										<li className="menu-item" key={index}>
+											<div className="menu-product">
+												<h3 className="menu-product-name">{product.name}
+													{
+														product.description &&
+														<span className="menu-description">
+															- {product.description}
+														</span>
+													}
+												</h3>
+											</div>
 
-												<p className="menu-price">{product.price}</p>
-											</li>
-										</>
+											<p className="menu-price">{product.price}</p>
+										</li>
 									);
 								})}
 							</ul>
