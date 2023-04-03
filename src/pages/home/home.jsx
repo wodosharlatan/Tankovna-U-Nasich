@@ -3,14 +3,13 @@ import Welcome from "../../components/welcome/welcome.jsx";
 import HomeMenu from "../../components/menu-home/menuHome.jsx";
 import Reservation from "../reservation/reservation";
 import HomeComponent from "../../components/HomeComponent/HomeComponent";
+import Divider from "../../components/divider/svg-divider";
 
 const Home = () => {
 	return (
 		<>
-			{/* <div className="test">
-				<img src="./Images/ii.png" alt="" />
-			</div> */}
 			<HomeComponent />
+			<Divider/>
 			<div className="container">
 				<HomeMenu />
 				<hr />

@@ -1,5 +1,6 @@
 import React from "react";
 import "./HomeComponent.scss";
+import { IoArrowForwardOutline } from "react-icons/io5";
 
 const HomeComponent = () => {
 	return (
@@ -11,7 +12,8 @@ const HomeComponent = () => {
 					<h2>V Tankovně ochutnáš, popiješ a pochutnáš</h2>
 
 					<a href="/reservation">
-						<button>Navštivte nás</button>
+						<button>Navštivte nás 
+						</button>
 					</a>
 
 					{/* <p>

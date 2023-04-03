@@ -1,8 +1,0 @@
-
---- spinaci prvky ---
-
-- unipolární tranzistory
-nejsou řízeny proudem, ale el. polem
-
-FET - Field Efect Transistor
-
