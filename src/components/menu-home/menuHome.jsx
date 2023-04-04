@@ -7,16 +7,15 @@ function HomeMenu() {
 		<>
 			<div className="homeMenu">
 				<div className="left">
-					<h1 className="section__title"> Nápojový lístek </h1>
+					<h1 className="section__title"> Prozkoumejte naši širokou nabídku nápojů </h1>
 					<div className="homeMenu__text">
 						<p>
-							Náš bar nabízí široký výběr nápojů, včetně kvalitních piv a
-							tvrdého alkoholu. Naše menu je navrženo tak, aby doplňovalo chuť
-							našich nápojů, k dispozici je malé občerstvení a sendviče. Ať už
-							máte náladu na lehkou plzeň nebo silnou IPA, my vám pomůžeme.
-							Nabízíme také různé whisky, rumy, giny a další nápoje podle vašich
-							preferencí. Přijďte si k nám užít skvělou noc s přáteli a nechte
-							náš zkušený personál doporučit ten ideální drink pro vás.
+							V Tankovně jsme hrdí na to, že nabízíme širokou škálu nápojů,
+							které vyhovují každému vkusu. Ať už jste příznivci kvalitních piv
+							nebo tvrdého alkoholu, máme pro vás širokou nabídku nápojů. A co
+							je to skvělý nápoj bez dokonalého doplňku? Naše menu je navrženo
+							tak, aby zvýraznilo chuť našich nápojů, nabízí malé občerstvení a
+							skvělé klobásy, které umocní váš zážitek.
 						</p>
 
 						<div className="button_div">
@@ -29,10 +28,7 @@ function HomeMenu() {
 				</div>
 
 				<div className="right">
-					<img
-						src="../Images/Menu.png"
-						alt="menu image"
-					/>
+					<img src="../Images/Menu.png" alt="menu image" />
 				</div>
 			</div>
 		</>

@@ -11,6 +11,10 @@ function App() {
   return (
     <>
       <Header />
+      <div className="header-space" style={{ height: '85px' }}></div>
+
+      {/* if in /, pass appbar-change to Header */}
+
       <main>
         <Router>
           <Routes>

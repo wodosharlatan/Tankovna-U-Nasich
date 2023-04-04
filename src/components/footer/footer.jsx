@@ -3,27 +3,29 @@ import "./footer.scss";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 
 function Footer() {
+
+
 	return (
 		<footer>
 			<div className="container">
 				<div>
 					<h1>Kontaktujte Nás</h1>
 					<div>
-						<a className="footer-link">
-							<span>Nám. Svobody 20, 506 01 Jičín</span>
+						<a className="footer-link" href="https://goo.gl/maps/2Nth1NqsFaYZm2eU9" target="_blank" rel="noopener noreferrer">
+							Nám. Svobody 20, 506 01 Jičín
 						</a>
-						<a className="footer-link">
-							<span>tel: +420 605 191 896</span>
+
+						<a className="footer-link" href="tel:+420605191896">
+							tel: +420 605 191 896
 						</a>
-						<a className="footer-link">
-							<span>info@tankovnaunasich.cz</span>
+						<a className="footer-link" href="mailto:info@tankovnaunasich.cz">
+							info@tankovnaunasich.cz
 						</a>
 					</div>
 				</div>
 
 				<div>
 					<h1>Tankovna U Našich</h1>
-					<p className="footer-desc">[Popis Naseho Baru]</p>
 					<div className="social">
 						<a href="">
 							<FaFacebook className="FooterIcon" />
@@ -35,6 +37,10 @@ function Footer() {
 							<FaInstagram className="FooterIcon" />
 						</a>
 					</div>
+					<h6 >
+						<a className="copyright" target="_blank" href="https://bosic.xyz/"> &copy; Copyright {new Date().getFullYear()}, Tomáš Bosák</a>
+						<a className="copyright" target="_blank" href="https://www.matejmichalek.com/"> & Matěj Michálek &copy;</a>
+					</h6>
 				</div>
 
 				<div>

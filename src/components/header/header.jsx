@@ -4,8 +4,22 @@ import { IoBeerOutline } from "react-icons/io5";
 import "./header.scss";
 
 function Header() {
+
+    // function handleScroll() {
+    //     const nav = document.querySelector(".header");
+    //     const navHeight = nav.getBoundingClientRect().height;
+    //     const scrollHeight = window.pageYOffset;
+    //     if (scrollHeight > 200) {
+    //         nav.classList.remove("no-bg");
+    //     } else {
+    //         nav.classList.add("no-bg");
+    //     }
+    // }
+
+    // window.addEventListener("scroll", handleScroll);
+
     return (
-        <header>
+        <header className="header no-bg">
             <div className="container">
 
                 <a className="navbar-brand" href="/">

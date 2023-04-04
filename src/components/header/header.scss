@@ -2,15 +2,27 @@
 
 header {
     background-color: $green-section;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transition: all 0.3s ease;
+
+    // &.no-bg {
+    //     background-color: transparent;
+    //     background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+    // }
 
     .container {
 
         display: flex;
         justify-content: flex-end;
         align-items: center;
+        padding-bottom: 0;
     }
 
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .nav-links {
@@ -31,22 +43,6 @@ header {
                 color: $hover-text-color;
             }
         }
-    }
-}
-
-.reserveButton {
-    padding: 9px 25px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease 0s;
-    background-color: rgba(255, 190, 51, 1);
-    color: $black-text-color;
-    margin-left: 1.25rem;
-    font-size: $h2-font-size;
-
-    &:hover {
-        background-color: rgba(255, 190, 51, 0.8);
     }
 }
 
