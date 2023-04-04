@@ -5,7 +5,7 @@ const Welcome = (props) => {
 	return (
 		<div className="welcome">
 			<div className="left">
-				<img src="../Images/Beer.webp" alt="random" />
+				<img src="../Images/Beer.png" alt="random" />
 			</div>
 
 			<div className="right">

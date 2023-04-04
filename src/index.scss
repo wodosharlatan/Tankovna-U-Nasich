@@ -187,31 +187,9 @@ button {
   transition: all 0.3s ease 0s;
   background-color: rgba(255, 190, 51, 1);
   color: $black-text-color;
-  margin-left: 1.25rem;
   font-size: $h2-font-size;
 
   &:hover {
     background-color: rgba(255, 190, 51, 0.8);
   }
 }
-
-
-
-
-// body {
-//   background-color: $green-section;
-
-//   * {
-//     color: white;
-//   }
-
-//   header,
-//   footer {
-//     background-color: darken($green-section, 2%);
-//   }
-
-//   hr {
-//     border-color: rgba(0, 0, 0, 0.247);
-
-//   }
-// }
