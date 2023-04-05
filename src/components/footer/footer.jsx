@@ -28,13 +28,13 @@ function Footer() {
 					<h1>Tankovna U Našich</h1>
 					<div className="social">
 						<a href="">
-							<FaFacebook className="FooterIcon" />
+							<FaFacebook className="FooterIcon" id="FaceBook" />
 						</a>
 						<a href="">
-							<FaLinkedin className="FooterIcon" />
+							<FaLinkedin className="FooterIcon" id="LinkedIn"/>
 						</a>
 						<a href="">
-							<FaInstagram className="FooterIcon" />
+							<FaInstagram className="FooterIcon"  id="Instagram" />
 						</a>
 					</div>
 					<h6 >

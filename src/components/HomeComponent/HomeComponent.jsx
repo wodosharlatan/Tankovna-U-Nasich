@@ -1,6 +1,6 @@
 import React from "react";
 import "./HomeComponent.scss";
-import { IoArrowForwardOutline } from "react-icons/io5";
+import Divider from "../divider/svg-divider";
 
 const HomeComponent = () => {
 	return (
@@ -12,7 +12,7 @@ const HomeComponent = () => {
 					<h2>V Tankovně ochutnáš, popiješ a pochutnáš</h2>
 
 					<a href="/reservation">
-						<button>Navštivte nás 
+						<button>Navštivte nás
 						</button>
 					</a>
 
@@ -22,7 +22,7 @@ const HomeComponent = () => {
 					občerstvení a klobásám. Přijďte si užít naši příjemnou atmosféru. Brzy
 					se uvidíme!
 				</p> */}
-
+					<Divider />
 				</div>
 			</div>
 		</>
