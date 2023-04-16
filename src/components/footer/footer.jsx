@@ -2,9 +2,12 @@ import React from "react";
 import "./footer.scss";
 import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 
+
+
 function Footer() {
 
-
+	const text = "info@tankovnaunasich.cz";
+	
 	return (
 		<footer>
 			<div className="container">
@@ -18,7 +21,7 @@ function Footer() {
 						<a className="footer-link" href="tel:+420605191896">
 							tel: +420 605 191 896
 						</a>
-						<a className="footer-link" href="info@tankovnaunasich.cz">
+						<a className="footer-link"  onClick={() => {navigator.clipboard.writeText(text);}}>
 							info@tankovnaunasich.cz
 						</a>
 					</div>
