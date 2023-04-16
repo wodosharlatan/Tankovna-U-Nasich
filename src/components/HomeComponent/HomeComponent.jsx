@@ -11,7 +11,7 @@ const HomeComponent = () => {
 					<h1>Tankovna U Našich</h1>
 					<h2>V Tankovně ochutnáš, popiješ a pochutnáš</h2>
 
-					<a href="/reservation">
+					<a href="/#reservation">
 						<button>Navštivte nás
 						</button>
 					</a>

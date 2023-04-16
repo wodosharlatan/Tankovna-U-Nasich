@@ -1,7 +1,7 @@
 import "./home.scss";
 import Welcome from "../../components/welcome/welcome.jsx";
 import HomeMenu from "../../components/menu-home/menuHome.jsx";
-import Reservation from "../reservation/reservation";
+import Reservation from "../../components/reservation/reservation";
 import HomeComponent from "../../components/HomeComponent/HomeComponent";
 
 const Home = () => {

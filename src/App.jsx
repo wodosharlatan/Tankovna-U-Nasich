@@ -4,7 +4,6 @@ import Header from './components/header/header'
 import Home from './pages/home/home'
 import Menu from './pages/menu/menu'
 import About from './pages/about/about'
-import Reservation from './pages/reservation/reservation'
 
 
 function App() {
@@ -21,7 +20,6 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/menu" element={<Menu />} />
             <Route path="/about" element={<About />} />
-            <Route path="/reservation" element={<Reservation />} />
           </Routes>
         </Router>
       </main>

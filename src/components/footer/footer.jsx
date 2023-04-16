@@ -18,7 +18,7 @@ function Footer() {
 						<a className="footer-link" href="tel:+420605191896">
 							tel: +420 605 191 896
 						</a>
-						<a className="footer-link" href="mailto:info@tankovnaunasich.cz">
+						<a className="footer-link" href="info@tankovnaunasich.cz">
 							info@tankovnaunasich.cz
 						</a>
 					</div>
