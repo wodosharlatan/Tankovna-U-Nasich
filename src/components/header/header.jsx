@@ -41,7 +41,7 @@ function Header() {
                         </li>
                     </ul>
                 </nav>
-                <a href="/reservation/">
+                <a href="/#reservation">
                     <button className="reserveButton">Rezervace</button>
                 </a>
             </div>

@@ -20,10 +20,6 @@ const galleryImages = [
 		thumbnail: "../Images/Thumbnail/2.jpg",
 	},
 	{
-		img: "../Images/3.jpg",
-		thumbnail: "../Images/Thumbnail/3.jpg",
-	},
-	{
 		img: "../Images/4.jpg",
 		thumbnail: "../Images/Thumbnail/4.jpg",
 	},

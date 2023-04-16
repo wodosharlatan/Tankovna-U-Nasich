@@ -1,17 +1,15 @@
 .customSVG {
-	position: absolute;
-    margin: 0 0 -84.5px 0;
-	bottom: 0;
-	left: 0;
-	width: 100%;
-	overflow: hidden;
-	line-height: 0;
-	transform: rotate(180deg);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
 	svg {
 		position: relative;
 		display: block;
-		width: calc(177% + 1.3px);
-		height: 336px;
+		width: calc(134% + 1.3px);
+		height: 76px;
 	}
 	.shape-fill {
 		fill: #ffffff;

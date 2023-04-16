@@ -2,7 +2,7 @@ import "./reservation.scss";
 
 const Reservation = () => {
 	return (
-		<div className="container">
+		<div id="reservation" className="container">
 
 			<div className="section__title">
 				<h1>Zarezervujte si stůl</h1>
