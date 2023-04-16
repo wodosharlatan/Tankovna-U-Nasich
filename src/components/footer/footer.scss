@@ -28,7 +28,7 @@ footer {
 		justify-content: space-evenly;
 		align-items: center;
 		font-size: $h3-font-size;
-		padding-bottom: .5rem;
+		padding-bottom: .1rem;
 		padding-top: .5rem;
 
 		#FaceBook {
@@ -59,14 +59,22 @@ footer {
 	}
 }
 
-
-.copyright {
-	color: hsl(0, 0%, 50%);
-	font-weight: 300;
-	text-decoration: none;
-
-	&:hover,
-	&:visited {
+.CopyrightDiv{
+	// make them in line and center
+	display: inline;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1rem;
+	.copyright {
+		color: #c2c6c8;
+		font-weight: 600;
 		text-decoration: none;
+	
+		&:hover,
+		&:visited {
+			text-decoration: none;
+		}
 	}
+	
 }
+

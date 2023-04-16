@@ -7,7 +7,7 @@ import { FaFacebook, FaLinkedin, FaInstagram } from "react-icons/fa";
 function Footer() {
 
 	const text = "info@tankovnaunasich.cz";
-	
+
 	return (
 		<footer>
 			<div className="container">
@@ -40,8 +40,8 @@ function Footer() {
 							<FaInstagram className="FooterIcon"  id="Instagram" />
 						</a>
 					</div>
-					<h6 >
-						<a className="copyright" target="_blank" href="https://bosic.xyz/"> &copy; Copyright {new Date().getFullYear()}, Tomáš Bosák</a>
+					<h6 className="CopyrightDiv" >
+						<a className="copyright" target="_blank" href="https://bosic.xyz/"> &copy; All rights reserverd {new Date().getFullYear()} | Tomáš Bosák</a>
 						<a className="copyright" target="_blank" href="https://www.matejmichalek.com/"> & Matěj Michálek &copy;</a>
 					</h6>
 				</div>
