@@ -1,6 +1,5 @@
-import React from "react";
 import "./menuHome.scss";
-import { IoArrowForwardOutline } from "react-icons/io5";
+import "../Button.scss";
 
 function HomeMenu() {
 	return (
@@ -19,9 +18,8 @@ function HomeMenu() {
 						</p>
 
 						<div className="button_div">
-							<button className="homeMenu_button">
+							<button className="welcome_button">
 								<a href="/menu/"> Zobrazit Nápojový Lístek </a>
-								<IoArrowForwardOutline className="icon" />
 							</button>
 						</div>
 					</div>

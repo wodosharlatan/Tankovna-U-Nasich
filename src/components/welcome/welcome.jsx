@@ -1,5 +1,5 @@
 import "./welcome.scss";
-import { IoArrowForwardOutline } from "react-icons/io5";
+import "../Button.scss";
 
 const Welcome = (props) => {
 	return (
@@ -23,7 +23,6 @@ const Welcome = (props) => {
 						<div className="button_div">
 							<button className="welcome_button">
 								<a href="/about/"> Zobrazit Galerii </a>
-								<IoArrowForwardOutline className="icon" />
 							</button>
 						</div>
 					)}

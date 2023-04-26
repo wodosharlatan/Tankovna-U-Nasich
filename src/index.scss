@@ -17,7 +17,7 @@ $large-screen: 1024px; // <--- Set Min width
 /*========== Font and typography ==========*/
 $body-font: "Poppins", sans-serif;
 $white-text-color: hsl(195, 12%, 94%);
-$black-text-color: hsl(240, 4%, 16%);
+$black-text-color: #27272a;
 
 /* .5rem = 8px, 1rem = 16px, 1.5rem = 24px ... */
 $big-font-size: 2rem;
@@ -50,146 +50,188 @@ $z-modal: 1000;
 
 /* Font size for large devices */
 @media screen and (min-width: $big-screen) {
-  $big-font-size: 3.2rem;
-  $h1-font-size: 2.45rem;
-  $h2-font-size: 1.7rem;
-  $h3-font-size: 1.95rem;
-  $normal-font-size: 1.2rem;
-  $small-font-size: 1.075rem;
-  $smaller-font-size: 1.013rem;
+	$big-font-size: 3.2rem;
+	$h1-font-size: 2.45rem;
+	$h2-font-size: 1.7rem;
+	$h3-font-size: 1.95rem;
+	$normal-font-size: 1.2rem;
+	$small-font-size: 1.075rem;
+	$smaller-font-size: 1.013rem;
 }
 
 /*==================== BASE ====================*/
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
 }
 
 html {
-  scroll-behavior: smooth;
+	scroll-behavior: smooth;
 }
 
 body {
-  font-family: $body-font;
-  font-size: $normal-font-size;
+	font-family: $body-font;
+	font-size: $normal-font-size;
 }
 
 html,
 body,
 #root {
-  min-height: 100vh;
-  background-color: $green-section;
+	min-height: 100vh;
+	background-color: $green-section;
 }
 
 #root {
-  display: flex;
-  flex-direction: column;
-  background-color: white;
+	display: flex;
+	flex-direction: column;
+	background-color: white;
 }
 
 main {
-  flex: 1;
+	flex: 1;
 }
 
 h1,
 h2,
 h3,
 h4 {
-  font-weight: $font-semi-bold;
+	font-weight: $font-semi-bold;
 }
 
 ul {
-  list-style: none;
+	list-style: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 .section {
-  padding: 2rem 0 4rem;
+	padding: 2rem 0 4rem;
 }
 
 .section__title {
-  z-index: $z-tooltip;
-  font-size: $h1-font-size;
+	z-index: $z-tooltip;
+	font-size: $h1-font-size;
 }
 
 .section__subtitle {
-  display: block;
-  font-size: $small-font-size;
+	display: block;
+	font-size: $small-font-size;
 }
-
 
 .section__title,
 .section__subtitle {
-  text-align: center;
+	text-align: center;
 }
 
 .btn,
 .btn:focus {
-  outline: none !important;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+	outline: none !important;
+	-webkit-box-shadow: none;
+	box-shadow: none;
 }
 
 a,
 a:focus,
 a:hover {
-  text-decoration: none;
+	text-decoration: none;
 }
 
-
 .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  // padding: 0 0rem 2.5rem 0;
-  padding-bottom: 2.5rem;
-  padding-inline: 2rem;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	// padding: 0 0rem 2.5rem 0;
+	padding-bottom: 2.5rem;
+	padding-inline: 2rem;
 }
 
 hr {
-  border: 1.75px solid $green-section;
-  border-radius: 5rem;
+	border: 1.75px solid $green-section;
+	border-radius: 5rem;
 }
 
 /*==================== WEBKIT ====================*/
 
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
+	width: 10px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: $white-section;
+	background: $white-section;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #888;
+	background: #888;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+	background: #555;
 }
 
+@keyframes wave {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(3600deg);
+	}
+}
 
-button {
-  padding: 9px 25px;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  transition: all 0.3s ease 0s;
-  background-color: rgba(255, 190, 51, 1);
-  color: $black-text-color;
-  font-size: $h2-font-size;
+.animationHolder {
+	width: 135px;
+	height: 39px;
 
-  &:hover {
-    background-color: rgba(255, 190, 51, 0.8);
-  }
+	button {
+		padding: 15px 40px;
+		border: none;
+		border-radius: 2rem;
+		cursor: pointer;
+		transition: all 0.5s ease-in-out;
+		color: $black-text-color;
+		font-size: $h2-font-size;
+		position: relative;
+		overflow: hidden;
+		position: relative;
+
+    // center this text
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // text z index to be above wave
+    .text_index{
+      z-index: $z-tooltip;
+    }
+
+		width: 100%;
+		height: 100%;
+		transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		&:hover {
+			.wave {
+				top: -50px;
+			}
+		}
+
+		.wave {
+			background-color: #ffbe33;
+			position: absolute;
+			top: 150%;
+			height: 300px;
+			width: 300px;
+			border-radius: 38%;
+			// center this
+			left: -50%;
+			transform: rotate(360deg);
+			transition: all 5s ease;
+			animation: wave 30s linear infinite;
+		}
+	}
 }
