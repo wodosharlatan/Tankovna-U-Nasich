@@ -1,27 +1,27 @@
 import React from "react";
 import "./HomeComponent.scss";
 import Divider from "../divider/svg-divider";
+import "../Button.scss";
 
 const HomeComponent = () => {
 	return (
 		<>
 			<div className="landing-page">
-
 				<div className="container">
 					<h1>Tankovna U Našich</h1>
 					<h2>V Tankovně ochutnáš, popiješ a pochutnáš</h2>
 
-					<a href="/#reservation">
-						<button>Navštivte nás
-						</button>
-					</a>
+					<div className="CursorHolder">
+						<a href="/#reservation">
+							<div className="animationHolderHome">
+								<button>
+									<div className="text_index"> Navštivte nás</div>
+									<div className="wave"></div>
+								</button>
+							</div>
+						</a>
+					</div>
 
-					{/* <p>
-					Najděte si svůj dokonalý drink v Tankovně U Našich. Máme řadu
-					kvalitních piv a lihovin, které se perfektně hodí k našemu lahodnému
-					občerstvení a klobásám. Přijďte si užít naši příjemnou atmosféru. Brzy
-					se uvidíme!
-				</p> */}
 					<Divider />
 				</div>
 			</div>

@@ -1,13 +1,15 @@
-import React from "react";
 import "./menuHome.scss";
-import { IoArrowForwardOutline } from "react-icons/io5";
+import "../Button.scss";
 
 function HomeMenu() {
 	return (
 		<>
 			<div className="homeMenu">
 				<div className="left">
-					<h1 className="section__title"> Prozkoumejte naši širokou nabídku nápojů </h1>
+					<h1 className="section__title">
+						{" "}
+						Prozkoumejte naši širokou nabídku nápojů{" "}
+					</h1>
 					<div className="homeMenu__text">
 						<p>
 							V Tankovně jsme hrdí na to, že nabízíme širokou škálu nápojů,
@@ -19,9 +21,8 @@ function HomeMenu() {
 						</p>
 
 						<div className="button_div">
-							<button className="homeMenu_button">
-								<a href="/menu/"> Zobrazit Nápojový Lístek </a>
-								<IoArrowForwardOutline className="icon" />
+							<button className="button_class">
+								<a href="/menu/">Zobrazit Nápojový Lístek </a>
 							</button>
 						</div>
 					</div>
