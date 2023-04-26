@@ -176,62 +176,35 @@ hr {
 	background: #555;
 }
 
-@keyframes wave {
-	0% {
-		transform: rotate(0deg);
-	}
-	100% {
-		transform: rotate(3600deg);
-	}
-}
+.button_div {
+	display: flex;
+	justify-content: start;
+	align-items: start;
+	padding-top: 1rem;
+	.welcome_button {
+		padding: 15px 15px;
 
-.animationHolder {
-	width: 135px;
-	height: 39px;
-
-	button {
-		padding: 15px 40px;
 		border: none;
-		border-radius: 2rem;
+		border-radius: 50px;
 		cursor: pointer;
 		transition: all 0.5s ease-in-out;
-		color: $black-text-color;
-		font-size: $h2-font-size;
-		position: relative;
-		overflow: hidden;
-		position: relative;
 
-    // center this text
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    // text z index to be above wave
-    .text_index{
-      z-index: $z-tooltip;
-    }
+		// center icon
+		display: flex;
+		justify-content: center;
+		align-items: center;
 
-		width: 100%;
-		height: 100%;
-		transform: translate3d(0, 0, 0);
-		-moz-transform: translate3d(0, 0, 0);
 		&:hover {
-			.wave {
-				top: -50px;
-			}
+			// add shadow
+			box-shadow: 0px 7.5px 8.5px rgba(255, 190, 51, 0.7);
+			transition: all 0.5s ease-in-out;
 		}
 
-		.wave {
-			background-color: #ffbe33;
-			position: absolute;
-			top: 150%;
-			height: 300px;
-			width: 300px;
-			border-radius: 38%;
-			// center this
-			left: -50%;
-			transform: rotate(360deg);
-			transition: all 5s ease;
-			animation: wave 30s linear infinite;
+		a {
+			text-decoration: none;
+			color: $black-text-color;
+			font-size: $h1-font-size;
+			font-weight: $font-medium;
 		}
 	}
 }

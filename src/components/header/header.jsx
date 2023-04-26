@@ -1,6 +1,7 @@
 import React from "react";
 import { IoBeerOutline } from "react-icons/io5";
 import "./header.scss";
+import "../Button.scss"
 
 function Header() {
 	// function handleScroll() {
