@@ -8,7 +8,7 @@ const Reservation = () => {
 			</div>
 			<div className="reservation-field">
 				<div className="form-container">
-					<form>
+					<form netlify>
 						<div>
 							<input type="text" className="FormInput" placeholder="Jmeno" />
 						</div>
