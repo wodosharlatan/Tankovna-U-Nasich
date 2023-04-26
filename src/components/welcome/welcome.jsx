@@ -21,7 +21,7 @@ const Welcome = (props) => {
 
 					{!props.hideBtn && (
 						<div className="button_div">
-							<button className="welcome_button">
+							<button className="button_class">
 								<a href="/about/"> Zobrazit Galerii </a>
 							</button>
 						</div>

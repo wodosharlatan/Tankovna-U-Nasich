@@ -50,7 +50,7 @@ function Footer() {
 					<h1>Otevírací Doba</h1>
 					<a className="footer-desc">
 						Neděle - Čtvrtek <br /> 15:00 - 1:00h <br />
-						Patek - Sobota <br /> 15:00- 3:00h
+						Pátek - Sobota <br /> 15:00- 3:00h
 					</a>
 				</div>
 			</div>

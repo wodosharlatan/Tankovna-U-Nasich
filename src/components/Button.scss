@@ -1,9 +1,13 @@
 @import "../index.scss";
 
+
+/* ==================================== ONLY ON PC OR BIG SCREEN DEVICE !!! ==================================== */
+
 @keyframes wave {
 	0% {
 		transform: rotate(0deg);
 	}
+
 	100% {
 		transform: rotate(3600deg);
 	}
@@ -24,6 +28,7 @@
 		position: relative;
 		overflow: hidden;
 		position: relative;
+		box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.7);
 
 		// center this text
 		display: flex;
@@ -80,6 +85,7 @@
 		position: relative;
 	    overflow: hidden;
 		position: relative;
+		box-shadow: 6px 6px 0 rgba(0, 0, 0, 0.7);
 
 		// center this text
 		display: flex;
@@ -116,3 +122,5 @@
 		}
 	}
 }
+
+/* ==================================== ONLY ON PC OR BIG SCREEN DEVICE !!! ==================================== */

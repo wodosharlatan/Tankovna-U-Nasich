@@ -3,7 +3,6 @@ import "./reservation.scss";
 const Reservation = () => {
 	return (
 		<div id="reservation" className="container">
-
 			<div className="section__title">
 				<h1>Zarezervujte si stůl</h1>
 			</div>
@@ -42,8 +41,10 @@ const Reservation = () => {
 						<div>
 							<input type="date" className="input" placeholder="mm/dd/yyyy" />
 						</div>
-						<div>
-							<button className="reservation_button">Zarezervovat</button>
+						<div className="button_div">
+							<button className="button_class">
+								<a>Zarezervovat</a>
+							</button>
 						</div>
 					</form>
 				</div>
@@ -59,7 +60,6 @@ const Reservation = () => {
 				</div>
 			</div>
 		</div>
-
 	);
 };
 
