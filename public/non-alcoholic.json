@@ -1,0 +1,142 @@
+[
+	{
+		"name": "Nealkoholické Nápoje",
+		"products": [
+			{
+				"name": "Pepsi",
+				"description": "0,25l",
+				"price": "40Kč"
+			},
+			{
+				"name": "Tonic Schweppes",
+				"description": "0,25l",
+				"price": "40Kč"
+			},
+			{
+				"name": "Tonic Schweppes Zázvor",
+				"description": "0,25l",
+				"price": "40Kč"
+			},
+			{
+				"name": "Tonic Schweppes Pink",
+				"description": "0,25l",
+				"price": "40Kč"
+			},
+			{
+				"name": "Mattoni jemně perlivá, perlivá, neperlivá",
+				"description": "0,33l",
+				"price": "34Kč"
+			},
+			{
+				"name": "Kofola Točená",
+				"description": "0,1l",
+				"price": "10Kč"
+			},
+			{
+				"name": "Džus [dle aktuální nabídky]",
+				"description": "0,1l",
+				"price": "18Kč"
+			},
+			{
+				"name": "Voda z kohoutku",
+				"description": "0,3l",
+				"price": "15Kč"
+			},
+			{
+				"name": "Voda z kohoutku",
+				"description": "0,5l",
+				"price": "20Kč"
+			},
+			{
+				"name": "Pepsi",
+				"description": "0,1l",
+				"price": "18Kč"
+			},
+			{
+				"name": "Mirinda",
+				"description": "0,1l",
+				"price": "18Kč"
+			},
+			{
+				"name": "7 UP",
+				"description": "0,1l",
+				"price": "18Kč"
+			},
+			{
+				"name": "Tonic [dle aktuální nabídky]",
+				"description": "0,1l",
+				"price": "18Kč"
+			},
+			{
+				"name": "Rockstar",
+				"description": "0,5l",
+				"price": "50Kč"
+			},
+			{
+				"name": "Red Bull",
+				"description": "0,25l",
+				"price": "66Kč"
+			}
+		]
+	},
+    {
+        "name": "Tepelné nápoje",
+        "products": [
+            {
+                "name": "Turecká káva",
+                "description": "",
+                "price": "34Kč"
+            },
+            {
+                "name": "Čaj [dle aktuální nabídky]",
+                "description": "",
+                "price": "34Kč"
+            },
+            {
+                "name": "Grog",
+                "description": "",
+                "price": "44Kč"
+            },
+            {
+                "name": "Horká Griotka",
+                "description": "",
+                "price": "44Kč"
+            },
+            {
+                "name": "Velký čaj [dle aktuální nabídky]",
+                "description": "0,5l",
+                "price": "38Kč"
+            },
+            {
+                "name": "Capuccino",
+                "description": "",
+                "price": "52Kč"
+            },
+            {
+                "name": "Espresso",
+                "description": "",
+                "price": "42Kč"
+            },
+            {
+                "name": "Latte Macchiato",
+                "description": "",
+                "price": "60Kč"
+            },
+            {
+                "name": "Svařené víno",
+                "description": "",
+                "price": "56Kč"
+            },
+            {
+                "name": "Smetana do kávy",
+                "description": "10ml",
+                "price": "5Kč"
+            },
+            {
+                "name": "Med",
+                "description": "1ks",
+                "price": "7Kč"
+            }
+        ]
+    }
+]
