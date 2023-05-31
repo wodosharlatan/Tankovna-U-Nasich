@@ -1,39 +1,51 @@
 import { React, useState, useEffect } from "react";
 import "./menu.scss";
+import { json } from "react-router-dom";
 
+let alcohol = [];
+	let other = [];
+	let non_alcoholic = [];
+	
 const Menu = () => {
 
 	// load alcohol products
 	const [pr, setPr] = useState([]);
 
-	useEffect(() => {
-		fetch("./alcoholic.json")
-			.then((response) => response.json())
-			.then((data) => setPr(data));
-	}, []);
-
-	useEffect(() => {
-		fetch("./non-alcoholic.json")
-			.then((response) => response.json())
-			.then((data) => setPr(data));
-	}, []);
-
-	
-	useEffect(() => {
-		fetch("./other.json")
-			.then((response) => response.json())
-			.then((data) => setPr(data));
-	}, []);
 	
 
+	useEffect(() => {
+		fetch("../alcoholic.json")
+			.then((response) => response.json())
+			.then((data) => { alcohol = [...data] });
+	}, []);
+
+	useEffect(() => {
+		fetch("../non-alcoholic.json")
+			.then((response) => response.json())
+			.then((data) => { non_alcoholic = [...data]});
+	}, []);
+
+
+	useEffect(() => {
+		fetch("../other.json")
+			.then((response) => response.json())
+			.then((data) => { other = [...data] });
+	}, []);
+
+
+	function HandleJSONrender(json) {
+		console.log(json);
+
+		setPr([...json]);
+	}
 
 
 
 	return (
 		<>
-			<button>Alkoholické Nápoje</button>
-			<button>Nealkoholické Nápoje</button>
-			<button>Pochutiny</button>
+			<button onClick={() => { HandleJSONrender(alcohol) }} 	>Alkoholické Nápoje</button>
+			<button onClick={() => { HandleJSONrender(non_alcoholic) }}  	>Nealkoholické Nápoje</button>
+			<button onClick={() => { HandleJSONrender(other) }}  	>Pochutiny</button>
 
 			<div className="container">
 				{pr.map((sectionProduct, index) => {
