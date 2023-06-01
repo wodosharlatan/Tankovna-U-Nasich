@@ -11,13 +11,17 @@ const Menu = () => {
 	// load alcohol products
 	const [pr, setPr] = useState([]);
 
-	
-
+	// load alcohol products
 	useEffect(() => {
 		fetch("../alcoholic.json")
 			.then((response) => response.json())
-			.then((data) => { alcohol = [...data] });
+			.then((data) => { 
+				alcohol = [...data];
+				setPr([...data]);
+			
+			});
 	}, []);
+
 
 	useEffect(() => {
 		fetch("../non-alcoholic.json")
@@ -43,11 +47,26 @@ const Menu = () => {
 
 	return (
 		<>
-			<button onClick={() => { HandleJSONrender(alcohol) }} 	>Alkoholické Nápoje</button>
-			<button onClick={() => { HandleJSONrender(non_alcoholic) }}  	>Nealkoholické Nápoje</button>
-			<button onClick={() => { HandleJSONrender(other) }}  	>Pochutiny</button>
+			
+			<div className="container  ">
 
-			<div className="container">
+				<div className="menu-selector-buttons">
+
+				<div className="button_div">
+					<button className=" button_class"  onClick={() => { HandleJSONrender(alcohol) }} 	>Alkoholické Nápoje</button>
+				</div>
+
+				<div className="button_div">
+					<button className="button_class" onClick={() => { HandleJSONrender(non_alcoholic) }}  	>Nealkoholické Nápoje</button>
+				</div>
+
+
+				<div className="button_div">
+					<button className="button_class" onClick={() => { HandleJSONrender(other) }}  	>Pochutiny</button>
+				</div>
+
+				</div>	
+
 				{pr.map((sectionProduct, index) => {
 					return (
 						<div className="menu_section" key={index}>
