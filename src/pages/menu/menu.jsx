@@ -1,10 +1,9 @@
 import { React, useState, useEffect } from "react";
 import "./menu.scss";
-import { json } from "react-router-dom";
 
 let alcohol = [];
-	let other = [];
-	let non_alcoholic = [];
+let other = [];
+let non_alcoholic = [];
 	
 const Menu = () => {
 
