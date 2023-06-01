@@ -1,0 +1,57 @@
+[
+    {
+        "name": "Pochutiny",
+        "products": [
+            {
+                "name": "Oplatky [dle aktuální nabídky]",
+                "description": "1ks",
+                "price": "18Kč"
+            },
+            {
+                "name": "Žvýkačky",
+                "description": "balení",
+                "price": "22Kč"
+            },
+            {
+                "name": "Aršídy",
+                "description": "100g",
+                "price": "30Kč"
+            },
+            {
+                "name": "Tyčinky",
+                "description": "balení",
+                "price": "32Kč"
+            },
+            {
+                "name": "Chipsy",
+                "description": "balení",
+                "price": "38Kč"
+            },
+            {
+                "name": "Kešu",
+                "description": "60g",
+                "price": "42Kč"
+            },
+            {
+                "name": "Utopenec",
+                "description": "1ks",
+                "price": "48Kč"
+            },
+            {
+                "name": "Grilovaný hermelín",
+                "description": "1ks",
+                "price": "78Kč"
+            },
+            {
+                "name": "Grilovaná klobása",
+                "description": "1ks",
+                "price": "78Kč"
+            },
+            {
+                "name": "Nakládaný hermelín",
+                "description": "1ks",
+                "price": "78Kč"
+            }
+        ]
+    }
+]
