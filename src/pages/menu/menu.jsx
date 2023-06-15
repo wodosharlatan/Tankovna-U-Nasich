@@ -4,9 +4,8 @@ import "./menu.scss";
 let alcohol = [];
 let other = [];
 let non_alcoholic = [];
-	
-const Menu = () => {
 
+const Menu = () => {
 	// load alcohol products
 	const [pr, setPr] = useState([]);
 
@@ -14,27 +13,27 @@ const Menu = () => {
 	useEffect(() => {
 		fetch("../alcoholic.json")
 			.then((response) => response.json())
-			.then((data) => { 
+			.then((data) => {
 				alcohol = [...data];
 				setPr([...data]);
-			
 			});
 	}, []);
-
 
 	useEffect(() => {
 		fetch("../non-alcoholic.json")
 			.then((response) => response.json())
-			.then((data) => { non_alcoholic = [...data]});
+			.then((data) => {
+				non_alcoholic = [...data];
+			});
 	}, []);
-
 
 	useEffect(() => {
 		fetch("../other.json")
 			.then((response) => response.json())
-			.then((data) => { other = [...data] });
+			.then((data) => {
+				other = [...data];
+			});
 	}, []);
-
 
 	function HandleJSONrender(json) {
 		console.log(json);
@@ -42,29 +41,43 @@ const Menu = () => {
 		setPr([...json]);
 	}
 
-
-
 	return (
 		<>
-			
 			<div className="container  ">
-
 				<div className="menu-selector-buttons">
+					<div className="button_div">
+						<button
+							className=" button_class"
+							onClick={() => {
+								HandleJSONrender(alcohol);
+							}}
+						>
+							Alkoholické Nápoje
+						</button>
+					</div>
 
-				<div className="button_div">
-					<button className=" button_class"  onClick={() => { HandleJSONrender(alcohol) }} 	>Alkoholické Nápoje</button>
+					<div className="button_div">
+						<button
+							className="button_class"
+							onClick={() => {
+								HandleJSONrender(non_alcoholic);
+							}}
+						>
+							Nealkoholické Nápoje
+						</button>
+					</div>
+
+					<div className="button_div">
+						<button
+							className="button_class"
+							onClick={() => {
+								HandleJSONrender(other);
+							}}
+						>
+							Pochutiny
+						</button>
+					</div>
 				</div>
-
-				<div className="button_div">
-					<button className="button_class" onClick={() => { HandleJSONrender(non_alcoholic) }}  	>Nealkoholické Nápoje</button>
-				</div>
-
-
-				<div className="button_div">
-					<button className="button_class" onClick={() => { HandleJSONrender(other) }}  	>Pochutiny</button>
-				</div>
-
-				</div>	
 
 				{pr.map((sectionProduct, index) => {
 					return (

@@ -1,21 +1,17 @@
-import React from "react";
+import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { IoBeerOutline } from "react-icons/io5";
 import "./header.scss";
-import "../Button.scss"
+import "../Button.scss";
 
 function Header() {
-	// function handleScroll() {
-	//     const nav = document.querySelector(".header");
-	//     const navHeight = nav.getBoundingClientRect().height;
-	//     const scrollHeight = window.pageYOffset;
-	//     if (scrollHeight > 200) {
-	//         nav.classList.remove("no-bg");
-	//     } else {
-	//         nav.classList.add("no-bg");
-	//     }
-	// }
 
-	// window.addEventListener("scroll", handleScroll);
+	const history = useHistory();
+
+	const goToReservation = () => {
+		history.push("#/reservation");
+	};
+
 
 	return (
 		<header className="header no-bg">
@@ -39,7 +35,8 @@ function Header() {
 						</li>
 					</ul>
 				</nav>
-				<a href="/#reservation">
+
+				<a onClick={goToReservation}>
 					<div className="animationHolder">
 						<button>
 							<div className="text_index"> Rezervace</div>
