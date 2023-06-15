@@ -1,21 +1,20 @@
 import React from "react";
 import { IoBeerOutline } from "react-icons/io5";
 import "./header.scss";
-import "../Button.scss"
+import "../Button.scss";
+
+// wait till page loads 
+setTimeout(() => {
+	// check if url contains "/#reservation" then scroll to reservation
+	if (window.location.href.includes("/#reservation")) {
+		window.scrollTo(0, document.body.scrollHeight);
+	}
+}, 1000);
 
 function Header() {
-	// function handleScroll() {
-	//     const nav = document.querySelector(".header");
-	//     const navHeight = nav.getBoundingClientRect().height;
-	//     const scrollHeight = window.pageYOffset;
-	//     if (scrollHeight > 200) {
-	//         nav.classList.remove("no-bg");
-	//     } else {
-	//         nav.classList.add("no-bg");
-	//     }
-	// }
-
-	// window.addEventListener("scroll", handleScroll);
+	const redirectToReservation = () => {
+		window.location.href = "/#reservation";
+	};
 
 	return (
 		<header className="header no-bg">
@@ -39,7 +38,8 @@ function Header() {
 						</li>
 					</ul>
 				</nav>
-				<a href="/#reservation">
+
+				<a onClick={redirectToReservation} href="/#reservation">
 					<div className="animationHolder">
 						<button>
 							<div className="text_index"> Rezervace</div>
@@ -53,9 +53,3 @@ function Header() {
 }
 
 export default Header;
-
-/*
-Rezervace
-<div class="wave"></div>
-</button>
-*/

@@ -134,3 +134,7 @@ dist
 
 # Ignore Build
 dist
+
+# Vite Deps
+.vite
+.vite/deps 

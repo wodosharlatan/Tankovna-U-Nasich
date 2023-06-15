@@ -30,18 +30,15 @@ function Footer() {
 				<div>
 					<h1>Tankovna U Našich</h1>
 					<div className="social">
-						<a href="">
+						<a target="_blank" href="https://www.facebook.com/PivniceUNasich">
 							<FaFacebook className="FooterIcon" id="FaceBook" />
 						</a>
-						<a href="">
-							<FaLinkedin className="FooterIcon" id="LinkedIn"/>
-						</a>
-						<a href="">
+						<a target="_blank" href="https://www.instagram.com/tankovnaunasich/?hl=cs">
 							<FaInstagram className="FooterIcon"  id="Instagram" />
 						</a>
 					</div>
 					<h6 className="CopyrightDiv" >
-						<a className="copyright" target="_blank" href="https://bosic.xyz/"> &copy; All rights reserverd {new Date().getFullYear()} | Tomáš Bosák</a>
+						<a className="copyright" target="_blank" href="https://github.com/wodosharlatan"> &copy; All rights reserverd {new Date().getFullYear()} | Tomáš Bosák</a>
 						<a className="copyright" target="_blank" href="https://www.matejmichalek.com/"> & Matěj Michálek &copy;</a>
 					</h6>
 				</div>
