@@ -1,17 +1,20 @@
-import React from 'react';
-import { useHistory } from 'react-router-dom';
+import React from "react";
 import { IoBeerOutline } from "react-icons/io5";
 import "./header.scss";
 import "../Button.scss";
 
+// wait till page loads 
+setTimeout(() => {
+	// check if url contains "/#reservation" then scroll to reservation
+	if (window.location.href.includes("/#reservation")) {
+		window.scrollTo(0, document.body.scrollHeight);
+	}
+}, 1000);
+
 function Header() {
-
-	const history = useHistory();
-
-	const goToReservation = () => {
-		history.push("#/reservation");
+	const redirectToReservation = () => {
+		window.location.href = "/#reservation";
 	};
-
 
 	return (
 		<header className="header no-bg">
@@ -36,7 +39,7 @@ function Header() {
 					</ul>
 				</nav>
 
-				<a onClick={goToReservation}>
+				<a onClick={redirectToReservation} href="/#reservation">
 					<div className="animationHolder">
 						<button>
 							<div className="text_index"> Rezervace</div>
@@ -50,9 +53,3 @@ function Header() {
 }
 
 export default Header;
-
-/*
-Rezervace
-<div class="wave"></div>
-</button>
-*/
