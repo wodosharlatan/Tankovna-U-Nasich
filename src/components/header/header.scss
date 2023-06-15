@@ -1,60 +1,70 @@
-@import '../../SCSS/variables.scss';
+@import "../../SCSS/variables.scss";
 header {
-    background-color: $green-section;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 1000;
-    transition: all 0.3s ease;
+	background: linear-gradient(
+		to right,
+        hsl(143, 45%, 8%),
+		hsl(143, 45%, 16%),
+		hsl(143, 45%, 22%),
+		hsl(143, 45%, 28%),
+		hsl(143, 45%, 28%),
+		hsl(143, 45%, 22%),
+		hsl(143, 45%, 16%),
+        hsl(143, 45%, 8%),
+	);
+	background-blend-mode: overlay;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	transition: all 0.3s ease;
 
-    // &.no-bg {
-    //     background-color: transparent;
-    //     background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
-    // }
+	// &.no-bg {
+	//     background-color: transparent;
+	//     background-image: linear-gradient(rgba(0, 0, 0, 0.6), transparent);
+	// }
 
-    .container {
+	.container {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		padding-bottom: 0;
+	}
 
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-bottom: 0;
-    }
-
-    padding: 20px 0;
+	padding: 20px 0;
 }
 
 .nav-links {
-    list-style: none;
+	list-style: none;
 
-    li {
-        display: inline-block;
-        padding: 0px 20px;
-        font-size: $h2-font-size;
-        font-weight: $font-medium;
+	li {
+		display: inline-block;
+		padding: 0px 20px;
+		font-size: $h2-font-size;
+		font-weight: $font-medium;
 
-        a {
-            transition: all 0.3s ease 0s;
-            color: $white-text-color;
+		a {
+			transition: all 0.3s ease 0s;
+			color: $white-text-color;
 
-            &:focus,
-            &:hover {
-                color: $hover-text-color;
-            }
-        }
-    }
+			&:focus,
+			&:hover {
+				color: $hover-text-color;
+			}
+		}
+	}
 }
 
 .navbar-brand {
-    margin-right: auto;
+	margin-right: auto;
 
-    h1 {
-        font-weight: bold;
-        font-size: 32px;
-        color: $white-text-color;
+	h1 {
+		font-weight: bold;
+		font-size: 32px;
+		color: $white-text-color;
 
-        .icon {
-            margin-bottom: -0.175rem;
-        }
-    }
+		.icon {
+			margin-bottom: -0.175rem;
+		}
+	}
 }

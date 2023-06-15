@@ -2,7 +2,18 @@
 
 footer {
 	color: $white-text-color;
-	background-color: $green-section;
+	background: linear-gradient(
+		to right,
+        hsl(143, 45%, 8%),
+		hsl(143, 45%, 16%),
+		hsl(143, 45%, 22%),
+		hsl(143, 45%, 28%),
+		hsl(143, 45%, 28%),
+		hsl(143, 45%, 22%),
+		hsl(143, 45%, 16%),
+        hsl(143, 45%, 8%),
+	);
+	background-blend-mode: overlay;
 
 	.container {
 		display: flex;
