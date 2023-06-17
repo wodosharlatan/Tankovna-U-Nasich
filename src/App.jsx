@@ -10,7 +10,7 @@ function App() {
 	return (
 		<>
 			<Header />
-			<div className="header-space" style={{ height: "85px" }}></div>
+			<div className="header-space" style={{ height: "71px" }}></div>
 
 			{/* if in /, pass appbar-change to Header */}
 
