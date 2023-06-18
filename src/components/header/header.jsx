@@ -16,6 +16,14 @@ function Header() {
 		window.location.href = "/#reservation";
 	};
 
+	const toggleMenu = () => {
+		const header = document.querySelector("header");
+		header.classList.toggle("active");
+
+		const menuToggle = document.querySelector(".menu-toggle");
+		menuToggle.classList.toggle("active");
+	};
+
 	return (
 		<header className="header no-bg">
 			<div className="container">
@@ -25,21 +33,19 @@ function Header() {
 					</h1>
 				</a>
 
-				<nav>
-					<ul className="nav-links">
-						<li>
-							<a href="/">Úvod</a>
-						</li>
-						<li>
-							<a href="/about/">O Nás</a>
-						</li>
-						<li>
-							<a href="/menu/">Menu</a>
-						</li>
-					</ul>
-				</nav>
+				<ul className="nav-links">
+					<li>
+						<a href="/">Úvod</a>
+					</li>
+					<li>
+						<a href="/about/">O Nás</a>
+					</li>
+					<li>
+						<a href="/menu/">Menu</a>
+					</li>
+				</ul>
 
-				<a onClick={redirectToReservation} href="/#reservation">
+				<a className="reservation-btn" onClick={redirectToReservation} href="/#reservation">
 					<div className="animationHolder">
 						<button>
 							<div className="text_index"> Rezervace</div>
@@ -47,6 +53,12 @@ function Header() {
 						</button>
 					</div>
 				</a>
+
+				<div className="menu-toggle" onClick={toggleMenu}>
+					<label class="menu__btn" for="menu__toggle">
+						<span></span>
+					</label>
+				</div>
 			</div>
 		</header>
 	);
