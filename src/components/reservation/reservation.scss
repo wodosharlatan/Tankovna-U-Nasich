@@ -97,6 +97,10 @@
 
 // make it responsive
 @media (max-width: 680px) {
+	#reservation.container {
+		padding-inline: 0;
+	}
+
 	.reservation-field {
 		flex-direction: column;
 
