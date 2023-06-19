@@ -26,10 +26,25 @@
 	}
 
 	img {
-        padding-top: 2rem;
+		padding-top: 2rem;
 		max-height: 20rem;
 		margin: 0 auto;
 	}
 }
 
+@media (max-width: 680px) {
+	.homeMenu {
+		flex-direction: column;
 
+		.button_div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img{
+			padding-top: 0;
+			max-height: 15rem;
+		}
+	}
+}
