@@ -31,4 +31,23 @@
 	}
 }
 
+@media (max-width: 680px) {
+	.welcome {
+		flex-direction: column-reverse;
+		margin-top: 1rem;
+
+
+		.button_div{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+
+		img{
+			padding-top: 0;
+			max-height: 15rem;
+		}
+	}
+}
+
 
