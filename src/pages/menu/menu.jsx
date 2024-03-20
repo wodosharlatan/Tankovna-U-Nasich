@@ -79,6 +79,8 @@ const Menu = () => {
 					</div>
 				</div>
 
+				
+
 				{pr.map((sectionProduct, index) => {
 					return (
 						<div className="menu_section" key={index}>
