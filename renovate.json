@@ -3,5 +3,6 @@
   "extends": [
     "config:base"
   ],
-  "baseBranch": "Feature"
+  "baseBranch": "Feature",
+  "enabled": false
 }
